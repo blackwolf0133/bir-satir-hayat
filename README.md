@@ -6,7 +6,7 @@ Instagram: **@birsatir.hayat** — her gün tek satırlık bir hayat dersi: sulu
 1. **Hazırla** iş akışı sıradaki bölümü önceden üretir: 5 sahne aynı anda 5 makinede çizilir
    (FLUX.2-klein-4B, Apache-2.0, stable-diffusion.cpp ile CPU'da), sonra ses + yazı + imza ile birleştirilir
    ve `hazir-<id>` sürümüne konur. Önde 3 hazır bölüm olana kadar kendini tekrar başlatır.
-2. **Günlük paylaşım** iş akışı her akşam ~22:30'da hazır olan sıradaki bölümü Reel olarak paylaşır.
+2. **Günlük paylaşım** iş akışı her gün ~17:30'da hazır olan sıradaki bölümü Reel olarak paylaşır.
 
 ## Yeni bölüm eklemek
 `episodes/NNN_konu.json` — 5 sahne; her sahnede ekrana yazılacak `text` ve çizim için İngilizce `prompt`.
