@@ -1,0 +1,32 @@
+# Instagram erişim anahtarı 60 günde biter. Bu iş her pazartesi süresini uzatır.
+# Otomatik güncelleme için GH_PAT adında bir secret gerekir (Secrets yazma izinli token).
+name: Token yenile
+
+on:
+  schedule:
+    - cron: "13 6 * * 1"
+  workflow_dispatch:
+
+jobs:
+  yenile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Tokenı yenile
+        id: yenile
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: python daily.py refresh-token
+      - name: Yeni tokenı kaydet
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::warning::GH_PAT tanımlı değil. Token yenilendi ama secret güncellenmedi; 50 günde bir elle güncelleyin."
+            exit 0
+          fi
+          gh secret set IG_ACCESS_TOKEN --body "${{ steps.yenile.outputs.token }}" --repo "${{ github.repository }}"
+          echo "IG_ACCESS_TOKEN güncellendi."

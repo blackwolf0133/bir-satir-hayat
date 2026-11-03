@@ -1,0 +1,38 @@
+{
+  "id": "004",
+  "slug": "kucuk_seyler",
+  "title": "Küçük şeyler",
+  "characters": {
+    "MAN": "a young man with curly black hair and a short beard, wearing a grey knit sweater"
+  },
+  "scenes": [
+    {
+      "text": "Mutluluk büyük günleri beklemez.",
+      "prompt": "{MAN} stands at a window in the early morning, stretching, soft sunrise light over rooftops."
+    },
+    {
+      "text": "Sabahın ilk çayında saklıdır.",
+      "prompt": "Close view of {MAN} holding a tulip-shaped glass of Turkish tea with both hands, steam rising, smiling, morning light on a wooden table."
+    },
+    {
+      "text": "Bir dostun habersiz mesajında.",
+      "prompt": "{MAN} on a bus looking at his phone and laughing, a heart-warming moment, city passing outside the window."
+    },
+    {
+      "text": "Yağmurdan sonraki toprak kokusunda.",
+      "prompt": "{MAN} in a garden after the rain, eyes closed, breathing in, wet green leaves and flowers, sunbeams breaking through clouds."
+    },
+    {
+      "text": "Küçük şeyleri fark eden, hep zengindir.",
+      "prompt": "{MAN} sits on a hill at sunset with a cup of tea, looking at the sky full of colors, birds flying, peaceful."
+    }
+  ],
+  "caption": "Bugün seni gülümseten küçük şey neydi? 🤍\n\nYorumlara yaz, birbirimize ilham olalım.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#hayatdersleri",
+    "#anlamlısözler",
+    "#duygusal",
+    "#reels"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "005",
+  "slug": "tohum",
+  "title": "Tohum",
+  "characters": {
+    "GIRL": "a young woman with long curly black hair, wearing an orange cardigan"
+  },
+  "scenes": [
+    {
+      "text": "Tohum toprağa düştüğünde kimse onu görmez.",
+      "prompt": "{GIRL} kneels in a garden and gently places a single seed into dark soil with her fingers, soft morning light."
+    },
+    {
+      "text": "Günlerce karanlıkta bekler.",
+      "prompt": "A cross-section view of dark earth with a tiny seed alone underground, quiet and patient, roots barely starting, soft glow."
+    },
+    {
+      "text": "Herkes vazgeçtiğini sanır.",
+      "prompt": "{GIRL} looks at an empty flower pot on a windowsill with a disappointed face, rain on the window."
+    },
+    {
+      "text": "Ama bir sabah, toprağı yarıp çıkar.",
+      "prompt": "A tiny green sprout breaks through the soil in a flower pot on a sunny windowsill, glowing morning sunlight, {GIRL} gasps with joy in the background."
+    },
+    {
+      "text": "Sen de karanlıktaysan, belki sadece büyüyorsun.",
+      "prompt": "{GIRL} stands in a blooming garden full of flowers at golden hour, smiling with eyes closed, arms slightly open, petals in the wind."
+    }
+  ],
+  "caption": "Bazı şeyler görünmeden büyür. Sabret, senin zamanın da gelecek. 🌱🤍",
+  "hashtags": [
+    "#birsatırhayat",
+    "#hayatdersleri",
+    "#anlamlısözler",
+    "#duygusal",
+    "#reels"
+  ]
+}

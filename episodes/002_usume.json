@@ -1,0 +1,41 @@
+{
+  "id": "002",
+  "slug": "usume",
+  "title": "Üşüme",
+  "characters": {
+    "BOY": "a little boy of about seven with short brown hair",
+    "MOTHER": "his mother, a woman in her thirties with a dark brown bun and a cream cardigan",
+    "MAN": "a young man of about twenty-five with short brown hair, wearing a navy coat",
+    "OLDMOM": "an older woman in her sixties with grey hair in a bun and a cream cardigan"
+  },
+  "scenes": [
+    {
+      "text": "Çocukken annen \"Üşüme\" dediğinde kızardın.",
+      "prompt": "At the front door of a cozy house on a snowy morning, {MOTHER} kneels and wraps a red scarf around the neck of {BOY}, who frowns impatiently with a school bag."
+    },
+    {
+      "text": "Büyüdün.\nŞehirler değiştirdin.",
+      "prompt": "At a train station, {MAN} carries a suitcase and boards a train, looking back over his shoulder, steam and soft morning light."
+    },
+    {
+      "text": "Bir akşam soğukta yürürken kimse sana \"Üşüme\" demedi.",
+      "prompt": "On a cold snowy night in a big city street, {MAN} walks alone with his collar up, hands in pockets, snowflakes falling, city lights."
+    },
+    {
+      "text": "İşte o an anladın.",
+      "prompt": "{MAN} stops on a snowy street under a street lamp, looking at a photo on his phone, a soft warm memory glow around him."
+    },
+    {
+      "text": "O söz aslında \"Seni seviyorum\" demekti.",
+      "prompt": "At the open door of a warmly lit house in the snow, {MAN} hugs {OLDMOM} tightly, she smiles with closed eyes, warm golden light from inside."
+    }
+  ],
+  "caption": "Bazı sözler başka kelimelerle söylenir. Annen sana en çok ne derdi? 🤍\n\nBugün onu ara.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#hayatdersleri",
+    "#anlamlısözler",
+    "#duygusal",
+    "#reels"
+  ]
+}

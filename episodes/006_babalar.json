@@ -1,0 +1,40 @@
+{
+  "id": "006",
+  "slug": "babalar",
+  "title": "Babalar",
+  "characters": {
+    "FATHER": "a father in his forties with short dark hair and a grey mustache, wearing a brown work jacket",
+    "GIRL": "his daughter, a little girl of about six with two pigtails and a yellow dress",
+    "WOMAN": "a young woman of about twenty-five with long dark hair in a yellow coat"
+  },
+  "scenes": [
+    {
+      "text": "Babalar sevgilerini pek söylemez.",
+      "prompt": "{FATHER} sits quietly at a kitchen table at dawn, drinking tea, looking out the window, thoughtful."
+    },
+    {
+      "text": "Sabah erkenden işe gitmelerinde saklıdır.",
+      "prompt": "{FATHER} walks out of an apartment building in the early dark morning with a lunch box, street lamps still on, cold breath."
+    },
+    {
+      "text": "Bisikletini bıraktığında arkandan koşmalarında.",
+      "prompt": "In a park, {FATHER} runs behind {GIRL}, who rides a small bicycle by herself for the first time, he has let go of the seat, both laughing."
+    },
+    {
+      "text": "Sen uyurken üstünü sessizce örtmelerinde.",
+      "prompt": "At night in a child's bedroom lit by a small lamp, {FATHER} gently pulls the blanket over the sleeping {GIRL}."
+    },
+    {
+      "text": "Bugün babana bir kez sarıl.\nSöyleyemediğini anlar.",
+      "prompt": "{WOMAN} hugs {FATHER}, now older with grey hair, at the door of the family home, he holds back tears with a small smile."
+    }
+  ],
+  "caption": "Babalar sevgiyi söylemez, yaşatır. 🤍\n\nBabana bunu gönder ya da bugün bir kez sarıl.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#hayatdersleri",
+    "#anlamlısözler",
+    "#duygusal",
+    "#reels"
+  ]
+}
