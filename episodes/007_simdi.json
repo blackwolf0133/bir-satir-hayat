@@ -1,0 +1,39 @@
+{
+  "id": "007",
+  "slug": "simdi",
+  "title": "Şimdi",
+  "characters": {
+    "MAN": "a young man of about twenty with messy brown hair, wearing a blue hoodie",
+    "GRANDPA": "his grandfather, an old man with white hair and a white beard, wearing a knitted vest and glasses"
+  },
+  "scenes": [
+    {
+      "text": "Bir gün \"Keşke\" dememek için,",
+      "prompt": "{MAN} sits on a sofa staring at his phone, ignoring {GRANDPA}, who sits in an armchair beside him, holding an old photo album, cozy living room."
+    },
+    {
+      "text": "Telefonu bırak.",
+      "prompt": "{MAN} puts his phone face down on the table and turns toward {GRANDPA}, warm lamp light."
+    },
+    {
+      "text": "Dedenin aynı hikâyeyi üçüncü kez anlatmasını dinle.",
+      "prompt": "{GRANDPA} tells a story with lively hand gestures while {MAN} listens closely, smiling, the photo album open between them."
+    },
+    {
+      "text": "Çünkü bir gün o sesi duymak için her şeyini verirsin.",
+      "prompt": "{MAN}, a few years older, sits alone in the same armchair holding the old photo album, a soft tear, autumn light from the window."
+    },
+    {
+      "text": "Sevdiklerin şimdi burada.\nŞimdi yanlarında ol.",
+      "prompt": "A big family dinner table on a warm evening, {MAN} laughs with {GRANDPA} and family members, warm golden light, steaming dishes."
+    }
+  ],
+  "caption": "En değerli şey, sevdiklerimizle geçirdiğimiz zaman. 🤍\n\nBugün kimi arayacaksın?",
+  "hashtags": [
+    "#birsatırhayat",
+    "#hayatdersleri",
+    "#anlamlısözler",
+    "#duygusal",
+    "#reels"
+  ]
+}

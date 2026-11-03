@@ -1,0 +1,39 @@
+{
+  "id": "001",
+  "slug": "yaninda_kalan",
+  "title": "Yanında kalan",
+  "characters": {
+    "MAN": "a young man with short black hair, wearing a mustard yellow scarf and an olive green jacket",
+    "WOMAN": "a young woman with long brown hair, wearing a red knitted beanie and a brown wool coat"
+  },
+  "scenes": [
+    {
+      "text": "Hayat, kimin gerçekten yanında olduğunu bazen en zor gününde gösterir.",
+      "prompt": "On a rainy evening, {MAN} sits alone on a wooden park bench with his head down, looking sad. Heavy rain falls, puddles, glowing street lamps."
+    },
+    {
+      "text": "Kalabalık dağılır.\nSesler azalır.",
+      "prompt": "A rainy cobblestone street at dusk. Many people holding umbrellas walk away from the viewer into the distance. In the foreground an empty wooden bench, wet from the rain."
+    },
+    {
+      "text": "Ama biri kalır.",
+      "prompt": "On a rainy street, {WOMAN} walks toward the viewer holding a large open umbrella above her head, kind caring expression, raindrops, warm street lamps."
+    },
+    {
+      "text": "Hiçbir şey söylemeden, sadece yanına oturur.",
+      "prompt": "Under the rain, two people sit side by side on a wooden park bench sharing one open umbrella: on the left {MAN}, on the right {WOMAN}. Her head rests on his shoulder."
+    },
+    {
+      "text": "İşte o insanı, asla kaybetme.",
+      "prompt": "After the rain at sunset, two people walk side by side up a grassy hill, seen from behind: {MAN} and {WOMAN}. Clouds clearing, golden light, autumn trees."
+    }
+  ],
+  "caption": "Zor günler, kimin gerçekten yanımızda olduğunu gösterir. Senin yanında kalan kim? 🤍\n\nBunu ona gönder, bilsin.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#hayatdersleri",
+    "#anlamlısözler",
+    "#duygusal",
+    "#reels"
+  ]
+}

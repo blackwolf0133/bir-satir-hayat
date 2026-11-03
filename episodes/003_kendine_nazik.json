@@ -1,0 +1,39 @@
+{
+  "id": "003",
+  "slug": "kendine_nazik",
+  "title": "Kendine nazik ol",
+  "characters": {
+    "WOMAN": "a young woman with short wavy auburn hair, wearing a mustard sweater",
+    "FRIEND": "her friend, a young woman with long black braided hair in a teal jacket"
+  },
+  "scenes": [
+    {
+      "text": "Kendine, en sevdiğin arkadaşına davrandığın gibi davran.",
+      "prompt": "{WOMAN} looks at her own reflection in a rainy café window, thoughtful and a little tired, warm interior lights."
+    },
+    {
+      "text": "O hata yaptığında onu affederdin.",
+      "prompt": "In a cozy kitchen, {FRIEND} has dropped a cake on the floor and looks upset, while {WOMAN} laughs kindly and puts a hand on her shoulder."
+    },
+    {
+      "text": "Yorulduğunda \"Biraz dinlen\" derdin.",
+      "prompt": "Under a big autumn tree in a park, {FRIEND} rests on a picnic blanket with closed eyes while {WOMAN} sits beside her reading a book, leaves falling."
+    },
+    {
+      "text": "Ağladığında yanında olurdun.",
+      "prompt": "On a sofa in a warm living room, {WOMAN} hugs {FRIEND}, who is crying softly, a cup of tea on the table, soft lamp light."
+    },
+    {
+      "text": "Şimdi aynısını kendin için yap.",
+      "prompt": "{WOMAN} sits alone by a window wrapped in a soft blanket with a cup of tea, smiling gently at her reflection, morning sun, plants on the sill."
+    }
+  ],
+  "caption": "Başkalarına gösterdiğin şefkati kendine de göster. 🤍\n\nBunu kendine en sert davranan arkadaşına gönder.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#hayatdersleri",
+    "#anlamlısözler",
+    "#duygusal",
+    "#reels"
+  ]
+}
