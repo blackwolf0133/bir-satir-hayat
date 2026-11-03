@@ -94,7 +94,7 @@ def cmd_pick_prepare(_):
 
 def cmd_pick_publish(_):
     hour_tr = (dt.datetime.utcnow() + dt.timedelta(hours=3)).hour
-    if os.environ.get("GITHUB_EVENT_NAME") == "schedule" and not (20 <= hour_tr < 24):
+    if os.environ.get("GITHUB_EVENT_NAME") == "schedule" and not (17 <= hour_tr < 21):
         print(f"Zamanlayıcı geç tetiklendi (TR saat {hour_tr}), gece paylaşımı yapılmıyor.")
         set_output("id", "")
         return
