@@ -76,6 +76,12 @@ def cmd_status(_):
 
 
 def cmd_pick_prepare(_):
+    forced = os.environ.get("FORCE_ID", "").strip()
+    if forced:
+        path, ep = find(forced)
+        set_output("id", ep["id"])
+        set_output("path", os.path.relpath(path, ROOT))
+        return
     ready = ready_ids()
     ahead = int(os.environ.get("AHEAD", "3"))
     q = queue()

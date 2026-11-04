@@ -6,6 +6,10 @@ on:
   schedule:
     - cron: "17 9 * * *"     # 12:17 Türkiye (yedek; paylaşım sonrası da otomatik başlar)
   workflow_dispatch:
+    inputs:
+      bolum:
+        description: "Belirli bir bölümü yeniden üret (ör. 003). Boşsa sıradaki."
+        default: ""
 
 permissions:
   contents: write
@@ -30,6 +34,7 @@ jobs:
         id: sec
         env:
           GH_TOKEN: ${{ github.token }}
+          FORCE_ID: ${{ inputs.bolum }}
         run: |
           python daily.py status
           export READY="$(gh release list --repo "${{ github.repository }}" --limit 100 --json tagName --jq '.[].tagName' | grep '^hazir-' | sed 's/^hazir-//' | tr '\n' ' ')"
@@ -93,18 +98,17 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: "3.11"
       - name: Kurulum
         run: |
           sudo apt-get update -q && sudo apt-get install -y -q ffmpeg
+          pip install chatterbox-tts huggingface_hub
           pip install -r requirements.txt
-          pip install torch --index-url https://download.pytorch.org/whl/cpu
-          pip install pocket-tts-turkish
       - name: Önbellek (ses modeli)
         uses: actions/cache@v4
         with:
           path: ~/.cache/huggingface
-          key: pocket-tts-turkish-v1
+          key: chatterbox-mtl-v1
       - name: Ses kaydını çöz
         env:
           VOICE_KEY: ${{ secrets.VOICE_KEY }}
