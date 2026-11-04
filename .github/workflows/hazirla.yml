@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
     inputs:
       bolum:
-        description: "Belirli bir bölümü yeniden üret (ör. 003). Boşsa sıradaki."
+        description: "Belirli bölümleri yeniden üret (ör. 003 004). Boşsa sıradaki."
         default: ""
 
 permissions:
@@ -25,6 +25,7 @@ jobs:
     outputs:
       id: ${{ steps.sec.outputs.id }}
       path: ${{ steps.sec.outputs.path }}
+      rest: ${{ steps.sec.outputs.rest }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -143,4 +144,9 @@ jobs:
       - name: Sıradakini başlat
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow run hazirla.yml --repo "${{ github.repository }}"
+        run: |
+          if [ -n "${{ needs.sec.outputs.rest }}" ]; then
+            gh workflow run hazirla.yml -f bolum="${{ needs.sec.outputs.rest }}" --repo "${{ github.repository }}"
+          else
+            gh workflow run hazirla.yml --repo "${{ github.repository }}"
+          fi
