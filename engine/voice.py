@@ -1,4 +1,6 @@
-"""Seslendirme: kullanıcının klonlanmış sesi (pocket-tts-turkish), sakin ve duygusal ton.
+"""Seslendirme. Varsayılan: Chatterbox Multilingual (MIT) + pocket-tts-turkish'in hazır "male_2" ses örneği
+(CC-BY-4.0, wite-tech/pocket-tts-turkish) — kanal sahibinin seçtiği ses (15 numara).
+VOICE_ENGINE=pocket verilirse eski düzen: kullanıcının klonlanmış sesi (pocket-tts-turkish).
 Her cümle ayrı dosya olarak üretilir; süreleri sahne zamanlamasında kullanılır.
 Kullanıcı sesi yalnızca assets/voice/aktif varken ve /tmp/ref.wav çözülmüşken kullanılır."""
 import os, subprocess, wave
@@ -21,7 +23,43 @@ def duration(path):
         return w.getnframes() / w.getframerate()
 
 
+ENGINE = os.environ.get("VOICE_ENGINE", "chatterbox")
+CB_REF = os.environ.get("CB_REF", "male_2")
+CB_EX = float(os.environ.get("CB_EXAGGERATION", "0.5"))
+CB_CFG = float(os.environ.get("CB_CFG", "0.5"))
+
+
+def _post(raw, dst):
+    af = (f"atempo={TEMPO}," if abs(TEMPO - 1) > 0.01 else "") + FILTERS
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", raw, "-af", af, "-ar", str(SR), "-ac", "1", dst], check=True)
+    os.remove(raw)
+
+
+def speak_lines_chatterbox(lines, workdir):
+    import torch
+    _load = torch.load
+    torch.load = lambda *a, **k: _load(*a, **{**k, "map_location": "cpu"})
+    from chatterbox.mtl_tts import ChatterboxMultilingualTTS
+    from huggingface_hub import hf_hub_download
+    os.makedirs(workdir, exist_ok=True)
+    m = ChatterboxMultilingualTTS.from_pretrained(device="cpu")
+    ref = hf_hub_download("wite-tech/pocket-tts-turkish", f"voices/{CB_REF}.wav")
+    print(f"Ses: Chatterbox, örnek ses {CB_REF}")
+    out = []
+    for i, line in enumerate(lines, 1):
+        torch.manual_seed(7 + i)
+        wav = m.generate(clean(line), language_id="tr", audio_prompt_path=ref, exaggeration=CB_EX, cfg_weight=CB_CFG)
+        raw = os.path.join(workdir, f"v{i}_raw.wav")
+        write_wav(raw, wav.squeeze(0).numpy(), m.sr)
+        dst = os.path.join(workdir, f"v{i}.wav")
+        _post(raw, dst)
+        out.append((dst, duration(dst)))
+    return out
+
+
 def speak_lines(lines, workdir):
+    if ENGINE == "chatterbox":
+        return speak_lines_chatterbox(lines, workdir)
     from pocket_tts_turkish import TurkishTTS, save_wav
     os.makedirs(workdir, exist_ok=True)
     tts = TurkishTTS.from_pretrained(device="cpu")
@@ -37,9 +75,7 @@ def speak_lines(lines, workdir):
         if EMOTION:
             kw["emotion"] = EMOTION
         save_wav(raw, tts.generate(clean(line), **kw), tts.sample_rate)
-        af = (f"atempo={TEMPO}," if abs(TEMPO - 1) > 0.01 else "") + FILTERS
-        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", raw, "-af", af, "-ar", str(SR), "-ac", "1", dst], check=True)
-        os.remove(raw)
+        _post(raw, dst)
         out.append((dst, duration(dst)))
     return out
 

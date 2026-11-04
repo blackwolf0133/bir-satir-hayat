@@ -17,4 +17,5 @@ Metinler tamamen özgün olmalı; başka sayfalardan söz alınmaz.
 - Çizim: FLUX.2-klein-4B (Apache-2.0), metin kodlayıcı Qwen3-4B (Apache-2.0)
 - Yazı tipi: Patrick Hand (SIL OFL, `assets/fonts/OFL-PatrickHand.txt`)
 - Müzik: kod içinde sentetik olarak üretilir (telifsiz)
-- Ses: kanal sahibinin kendi sesi; kayıt depoda yalnızca şifreli tutulur.
+- Ses: Chatterbox Multilingual (MIT, Resemble AI) + ses örneği `male_2`, Pocket TTS Turkish (CC-BY-4.0, wite-tech/pocket-tts-turkish, Kyutai Pocket TTS'ten türetilmiştir)
+- Eski ses düzeni (VOICE_ENGINE=pocket): kanal sahibinin kendi sesi; kayıt depoda yalnızca şifreli tutulur.
