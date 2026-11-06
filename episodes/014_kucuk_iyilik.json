@@ -1,0 +1,40 @@
+{
+  "id": "014",
+  "slug": "kucuk_iyilik",
+  "title": "Küçük iyilik",
+  "characters": {
+    "MAN": "a young man with short blond hair, wearing a dark green parka and a beige scarf",
+    "OLDLADY": "an elderly woman with short silver hair and a purple knitted hat, wearing a long plum coat",
+    "CHILD": "her granddaughter, a little girl of about eight with a black ponytail, wearing a pink coat"
+  },
+  "scenes": [
+    {
+      "text": "Bir sabah otobüste yaşlı bir teyzeye yer verdin.",
+      "prompt": "On a city bus on a cold winter morning, {MAN} stands up from his seat and gestures kindly for {OLDLADY} to sit down, she smiles gratefully."
+    },
+    {
+      "text": "Belki iki dakika sürdü,\nbelki unuttun bile.",
+      "prompt": "{MAN} steps off the bus onto a snowy street and walks away with his hands in his pockets, the bus driving off, soft winter light."
+    },
+    {
+      "text": "Ama o akşam torununa seni anlattı.",
+      "prompt": "In a warm living room in the evening, {OLDLADY} sits on a sofa telling a story to {CHILD}, who listens wide-eyed, a lamp and steaming cups of tea."
+    },
+    {
+      "text": "Torunu da ertesi gün birine yardım etti.",
+      "prompt": "In a snowy schoolyard, {CHILD} kneels and helps a small boy pick up his scattered colored pencils from the snow, both smiling."
+    },
+    {
+      "text": "İyilik küçüktür\nama yolculuğu hiç bitmez.",
+      "prompt": "A snowy town street at dusk with warm glowing windows, {MAN} walks past and smiles as {CHILD} waves at him from across the street, snow falling gently."
+    }
+  ],
+  "caption": "Yaptığın küçük bir iyilik, bilmediğin bir yerde yaşamaya devam eder. 🤍\n\nBugün kime bir iyilik yapacaksın?",
+  "hashtags": [
+    "#birsatırhayat",
+    "#hayatdersleri",
+    "#anlamlısözler",
+    "#duygusal",
+    "#reels"
+  ]
+}

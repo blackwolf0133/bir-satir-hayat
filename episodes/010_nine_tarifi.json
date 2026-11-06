@@ -1,0 +1,40 @@
+{
+  "id": "010",
+  "slug": "nine_tarifi",
+  "title": "Ninenin tarifi",
+  "characters": {
+    "NINE": "a grandmother with white hair in a loose bun and round glasses, wearing a lilac dress and a floral apron",
+    "GIRL": "her granddaughter, a little girl of about seven with curly chestnut hair, wearing a yellow dress",
+    "WOMAN": "a young woman of about thirty with curly chestnut hair, wearing a mustard yellow sweater"
+  },
+  "scenes": [
+    {
+      "text": "Ninenin tarifinde ölçü yoktu,\nhep \"Göz kararı\" derdi.",
+      "prompt": "In a sunny old kitchen in autumn, {NINE} pours flour from her hand into a big bowl without measuring, smiling, while {GIRL} watches from a stool."
+    },
+    {
+      "text": "Hamuru yoğururken ellerine bakardın.",
+      "prompt": "{GIRL} sits on a wooden stool with her chin on her hands, watching {NINE} knead soft dough on a floured table, warm afternoon light."
+    },
+    {
+      "text": "Yıllar sonra aynı tadı tutturmaya çalıştın.",
+      "prompt": "In a small modern kitchen on an autumn evening, {WOMAN} kneads dough alone with flour on her cheek, concentrating, a warm lamp above."
+    },
+    {
+      "text": "Olmadı.\nÇünkü tarifte yazmayan bir şey vardı.",
+      "prompt": "{WOMAN} tastes a piece of fresh bread at her kitchen table and smiles softly with a little sadness, autumn leaves outside the window."
+    },
+    {
+      "text": "Eksik olan un değildi,\nseni seyreden o sıcak gözlerdi.",
+      "prompt": "{WOMAN} kneads dough at her kitchen table while a little girl in a yellow dress watches her from a stool, both smiling, warm golden light."
+    }
+  ],
+  "caption": "Bazı tatlar tarifle değil, sevgiyle yapılır. Ninenin hangi yemeğini özlüyorsun? 🤍\n\nBunu aynı mutfakta büyüdüğün birine gönder.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#hayatdersleri",
+    "#anlamlısözler",
+    "#duygusal",
+    "#reels"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "008",
+  "slug": "kumdan_kale",
+  "title": "Kumdan kale",
+  "characters": {
+    "WOMAN": "a young woman with a short black bob, wearing a blue and white striped t-shirt and rolled-up jeans, barefoot"
+  },
+  "scenes": [
+    {
+      "text": "Dalga gelir,\nkumdan kaleni alıp götürür.",
+      "prompt": "On a sandy beach on a late summer evening, a gentle wave washes over a sandcastle while {WOMAN} kneels beside it with surprised eyes, soft orange sunset light."
+    },
+    {
+      "text": "Bir süre öylece bakarsın boş kıyıya.",
+      "prompt": "{WOMAN} sits on the wet sand hugging her knees, looking at the smooth empty shore where the castle was, calm sea, pink evening sky."
+    },
+    {
+      "text": "Sonra elin kendiliğinden kuma uzanır.",
+      "prompt": "Close view of the hands of {WOMAN} scooping wet sand with a small red bucket beside her, seashells around, warm golden light."
+    },
+    {
+      "text": "Bu sefer biraz daha yukarıya kurarsın.",
+      "prompt": "Higher up on the dry beach, {WOMAN} smiles while shaping the towers of a new bigger sandcastle, waves far behind her, sunset glow."
+    },
+    {
+      "text": "Kale gitti ama onu kuran eller hâlâ sende.",
+      "prompt": "{WOMAN} stands proudly next to her finished sandcastle with sandy hands, the first stars appearing over the calm sea, seagulls in the purple sky."
+    }
+  ],
+  "caption": "Bazen her şey baştan başlar. Ve sen yine kurarsın. 🤍\n\nYeniden başlamaya çalışan birine gönder.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#hayatdersleri",
+    "#anlamlısözler",
+    "#duygusal",
+    "#reels"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "012",
+  "slug": "sabah_gelir",
+  "title": "Sabah gelir",
+  "characters": {
+    "WOMAN": "a young woman with long wavy red hair, wearing light grey pajamas and a cozy blue cardigan"
+  },
+  "scenes": [
+    {
+      "text": "Bazı geceler hiç bitmeyecekmiş gibi gelir.",
+      "prompt": "In a quiet bedroom at night, {WOMAN} sits on the edge of her bed hugging a pillow, looking at the dark blue window, a small lamp glowing."
+    },
+    {
+      "text": "Uyuyamazsın,\ntavana bakar durursun.",
+      "prompt": "{WOMAN} lies awake in bed with open eyes looking up at the ceiling, soft moonlight across the blanket, a cat sleeping at her feet."
+    },
+    {
+      "text": "Ama dışarıda bir kuş,\nsabahı çoktan bekliyor.",
+      "prompt": "Outside a window on a tree branch, a small robin sits awake under the fading stars, the sky slowly turning deep blue to lavender."
+    },
+    {
+      "text": "Ve gökyüzü kimseye sormadan yavaşça pembeleşir.",
+      "prompt": "{WOMAN} stands at the open window wrapped in her cardigan, watching a soft pink dawn over the rooftops, the robin on the branch nearby."
+    },
+    {
+      "text": "Sabah,\nsen inanmasan da gelir.",
+      "prompt": "{WOMAN} smiles with closed eyes as warm morning sunlight fills her room, holding a cup of tea at the window, birds flying in the pink sky."
+    }
+  ],
+  "caption": "Ne kadar uzun sürerse sürsün, her gece sabaha varır. 🤍\n\nBu aralar zor geceler geçiren birine gönder.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#hayatdersleri",
+    "#anlamlısözler",
+    "#duygusal",
+    "#reels"
+  ]
+}
