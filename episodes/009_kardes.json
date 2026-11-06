@@ -1,0 +1,41 @@
+{
+  "id": "009",
+  "slug": "kardes",
+  "title": "Kardeş",
+  "characters": {
+    "SIS": "a little girl of about eight with two long brown braids, wearing a red sweater",
+    "BRO": "her little brother, a boy of about six with messy black hair, wearing a green sweater",
+    "WOMAN": "a woman of about thirty with long brown hair in a single braid, wearing a red coat",
+    "MAN": "a man of about twenty-eight with short black hair and a small beard, wearing a green jacket"
+  },
+  "scenes": [
+    {
+      "text": "Çocukken aynı odayı,\naynı yorganı paylaştınız.",
+      "prompt": "In a cozy children's bedroom on a winter night, {SIS} on the left and {BRO} on the right share one big patchwork quilt and giggle with a flashlight, snow outside the window."
+    },
+    {
+      "text": "Son lokmayı kapmak için yarışırdınız.",
+      "prompt": "At a kitchen table, {SIS} and {BRO} both reach with forks for the last slice of cake on a plate, laughing playfully, warm lamp light."
+    },
+    {
+      "text": "Büyüyünce ayrı şehirlere,\nayrı hayatlara dağıldınız.",
+      "prompt": "On a snowy train platform, {WOMAN} on the left waves goodbye from the train door while {MAN} on the right waves back from the platform, soft winter light."
+    },
+    {
+      "text": "Ama yan yana oturunca yine o küçük çocuklar olursunuz.",
+      "prompt": "In the same old children's bedroom, {WOMAN} on the left and {MAN} on the right sit side by side under the old patchwork quilt laughing, snow falling outside the window."
+    },
+    {
+      "text": "Kardeş, çocukluğunu seninle birlikte hatırlayan kişidir.",
+      "prompt": "{WOMAN} and {MAN} walk side by side through a snowy park at dusk, seen from behind, his arm around her shoulder, warm street lamps."
+    }
+  ],
+  "caption": "Aynı odadan çıkıp ayrı hayatlara dağıldınız ama bağ hiç kopmadı. 🤍\n\nBunu kardeşine gönder.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#hayatdersleri",
+    "#anlamlısözler",
+    "#duygusal",
+    "#reels"
+  ]
+}

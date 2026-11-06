@@ -1,0 +1,39 @@
+{
+  "id": "011",
+  "slug": "eski_dost",
+  "title": "Eski dost",
+  "characters": {
+    "MAN": "a man of about thirty-five with short brown hair and a trimmed beard, wearing a dark blue coat and a grey scarf",
+    "FRIEND": "his old friend, a man of about thirty-five with curly black hair and round glasses, wearing a brown corduroy jacket"
+  },
+  "scenes": [
+    {
+      "text": "Bazı dostlar yıllarca aramaz,\nsen de aramazsın.",
+      "prompt": "On an autumn evening, {MAN} sits at his desk by a window and looks at an old photograph of two smiling boys on bicycles, fallen leaves outside."
+    },
+    {
+      "text": "Hayat araya girer:\nişler, şehirler, yorgunluk.",
+      "prompt": "{MAN} walks quickly on a busy autumn street with a briefcase, tired face, golden leaves blowing around, soft evening light."
+    },
+    {
+      "text": "Sonra bir gün bir köşe başında karşılaşırsınız.",
+      "prompt": "On a street corner under an autumn tree, {MAN} on the left and {FRIEND} on the right suddenly stop and stare at each other in surprise, leaves falling."
+    },
+    {
+      "text": "Ve sanki dün ayrılmışsınız gibi gülersiniz.",
+      "prompt": "{MAN} and {FRIEND} hug and laugh warmly on the street corner under the golden autumn tree, patting each other's backs."
+    },
+    {
+      "text": "Gerçek dostluk, aradaki yılları hiç saymaz.",
+      "prompt": "In a cozy café by the window, {MAN} on the left and {FRIEND} on the right drink tea and laugh together, rain softly falling outside, warm lights."
+    }
+  ],
+  "caption": "Yıllar geçse de bazı dostluklar hiç eskimez. Aklına ilk kim geldi? 🤍\n\nOna gönder, belki bugün ararsınız.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#hayatdersleri",
+    "#anlamlısözler",
+    "#duygusal",
+    "#reels"
+  ]
+}

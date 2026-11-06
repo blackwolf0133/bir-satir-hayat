@@ -1,0 +1,38 @@
+{
+  "id": "013",
+  "slug": "yavas_yuruyen",
+  "title": "Yavaş yürüyen",
+  "characters": {
+    "MAN": "a young man with wavy chestnut hair, wearing a rust-orange sweater and a canvas backpack"
+  },
+  "scenes": [
+    {
+      "text": "Herkes koşuyor gibi görünür,\nsen ise yürüyorsun.",
+      "prompt": "On a country path in spring, {MAN} walks calmly while two cyclists speed past him in the distance, green fields, white clouds."
+    },
+    {
+      "text": "Arkadaşların birer birer ileriye geçer.",
+      "prompt": "{MAN} stands on a hillside path watching small figures far ahead climbing to the top of the hill, soft spring light, wildflowers."
+    },
+    {
+      "text": "Sen hâlâ kendi yolunu arıyorsun.",
+      "prompt": "{MAN} stops at a fork in a forest path, looking thoughtfully at both ways, sunbeams through fresh green leaves."
+    },
+    {
+      "text": "Ama yürürken her çiçeği,\nher ağacı tanıyorsun.",
+      "prompt": "{MAN} kneels on the path smiling at a small blue butterfly resting on a wildflower, spring meadow around him, gentle light."
+    },
+    {
+      "text": "Acele etme.\nYol, onu tanıyana kendini açar.",
+      "prompt": "{MAN} reaches the top of a green hill at golden hour and looks over a wide valley with a river and blossoming trees, peaceful smile."
+    }
+  ],
+  "caption": "Herkesin adımı farklıdır, yavaş yürümek de bir yürüyüştür. 🤍\n\nKendini geride hisseden birine gönder.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#hayatdersleri",
+    "#anlamlısözler",
+    "#duygusal",
+    "#reels"
+  ]
+}
