@@ -58,7 +58,68 @@ def speak_lines_chatterbox(lines, workdir):
     return out
 
 
+GEM_VOICE = os.environ.get("GEMINI_VOICE", "Fenrir")
+GEM_PROMPT = ("Read this Turkish line aloud slowly, warmly and softly, like a heartfelt, emotional narrator "
+              "speaking to someone they love. Natural Istanbul Turkish, calm pace, gentle and sincere:")
+
+
+def _gemini_pcm(text):
+    import base64, json, time, urllib.error, urllib.request
+    key = os.environ["GEMINI_API_KEY"]
+    models = os.environ.get("GEMINI_TTS_MODELS",
+                            "gemini-3.8-flash-lite-tts,gemini-3.1-flash-tts-preview,gemini-2.5-flash-preview-tts").split(",")
+    body = json.dumps({"contents": [{"parts": [{"text": GEM_PROMPT + "\n\n" + text}]}],
+                       "generationConfig": {"responseModalities": ["AUDIO"], "speechConfig": {
+                           "voiceConfig": {"prebuiltVoiceConfig": {"voiceName": GEM_VOICE}}}}}).encode()
+    last = None
+    for model in models:
+        for attempt in range(5):
+            try:
+                req = urllib.request.Request(
+                    f"https://generativelanguage.googleapis.com/v1beta/models/{model.strip()}:generateContent",
+                    data=body, headers={"x-goog-api-key": key, "Content-Type": "application/json"})
+                r = json.load(urllib.request.urlopen(req, timeout=180))
+                return base64.b64decode(r["candidates"][0]["content"]["parts"][0]["inlineData"]["data"])
+            except urllib.error.HTTPError as e:
+                last = f"{model}: HTTP {e.code} {e.read().decode()[:200]}"
+                if e.code in (429, 500, 503):
+                    time.sleep(20 * (attempt + 1))
+                    continue
+                break
+            except (KeyError, IndexError, TimeoutError, urllib.error.URLError) as e:
+                last = f"{model}: {e}"
+                time.sleep(5)
+    raise RuntimeError(last)
+
+
+def speak_lines_gemini(lines, workdir):
+    os.makedirs(workdir, exist_ok=True)
+    print(f"Ses: Google Gemini, {GEM_VOICE}")
+    trim = ("silenceremove=start_periods=1:start_threshold=-45dB,areverse,"
+            "silenceremove=start_periods=1:start_threshold=-45dB,areverse,")
+    out = []
+    for i, line in enumerate(lines, 1):
+        raw = os.path.join(workdir, f"v{i}_raw.pcm")
+        open(raw, "wb").write(_gemini_pcm(clean(line)))
+        dst = os.path.join(workdir, f"v{i}.wav")
+        af = trim + (f"atempo={TEMPO}," if abs(TEMPO - 1) > 0.01 else "") + FILTERS
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "s16le", "-ar", "24000", "-ac", "1", "-i", raw,
+                        "-af", af, "-ar", str(SR), "-ac", "1", dst], check=True)
+        os.remove(raw)
+        out.append((dst, duration(dst)))
+    return out
+
+
 def speak_lines(lines, workdir):
+    if ENGINE == "gemini":
+        if os.environ.get("GEMINI_API_KEY"):
+            try:
+                return speak_lines_gemini(lines, workdir)
+            except Exception as e:  # noqa: BLE001
+                print(f"::warning::Gemini sesi çalışmadı, Chatterbox'a geçiliyor: {e}")
+        else:
+            print("::warning::GEMINI_API_KEY yok, Chatterbox kullanılacak")
+        return speak_lines_chatterbox(lines, workdir)
     if ENGINE == "chatterbox":
         return speak_lines_chatterbox(lines, workdir)
     from pocket_tts_turkish import TurkishTTS, save_wav

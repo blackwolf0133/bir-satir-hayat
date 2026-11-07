@@ -105,6 +105,7 @@ jobs:
           sudo apt-get update -q && sudo apt-get install -y -q ffmpeg
           pip install chatterbox-tts huggingface_hub
           pip install -r requirements.txt
+          pip install transformers || true
       - name: Önbellek (ses modeli)
         uses: actions/cache@v4
         with:
@@ -124,7 +125,12 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: gh release download "cizim-${{ needs.sec.outputs.id }}" -D img --repo "${{ github.repository }}" && ls img
       - name: Videoyu birleştir
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_VOICE: "Fenrir"
         run: |
+          # assets/voice/gemini dosyası varsa (onaydan sonra) Gemini (Fenrir) sesi kullanılır.
+          if [ -n "$GEMINI_API_KEY" ] && [ -f assets/voice/gemini ]; then export VOICE_ENGINE=gemini; fi
           ID="${{ needs.sec.outputs.id }}"
           n=$(python -c "import json;print(len(json.load(open('${{ needs.sec.outputs.path }}'))['scenes']))")
           for i in $(seq 1 $n); do [ -f img/sahne$i.png ] || { echo "::error::sahne$i eksik"; exit 1; }; done

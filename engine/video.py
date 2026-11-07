@@ -1,6 +1,6 @@
 """Bir Satır Hayat video birleştirici.
 Sahne = görsel + el yazısı cümle. Krem kâğıt zemin, üstte yazı, altta görsel (üst kenarı kâğıda eriyor),
-yavaş zoom, sahneler arası yumuşak geçiş, yazı yavaşça beliriyor."""
+hareketli görsel (parallax, rüzgâr, yağmur/yaprak), sahneler arası yumuşak geçiş, yazı yavaşça beliriyor."""
 import json, os, subprocess, sys
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
@@ -111,7 +111,8 @@ def render(scenes, audio, out, total):
     prepared = []
     for s in scenes:
         info = {}
-        prepared.append({"t": s["t"], "img": image_layer(s["img"]),
+        from .motion import SceneMotion
+        prepared.append({"t": s["t"], "mot": SceneMotion(s["img"], s.get("prompt", ""), W, bh, seed=len(prepared) + 1),
                          "txt": np.array(text_layer(s["text"], info), np.float32), "bottom": info["bottom"]})
     ff = subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}",
                            "-r", str(FPS), "-i", "-", "-i", audio, "-c:v", "libx264", "-preset", "veryfast",
@@ -137,19 +138,9 @@ def render(scenes, audio, out, total):
             frame_layers.append((p, a, (t - p["t"]) / max(0.1, nxt - p["t"] + FADE)))
         frame = bg.copy()
         for p, a, prog in frame_layers:
-            im = p["img"]
-            z = 1.0 + 0.06 * min(1, max(0, prog))
-            # kırpma kutusu: zoom arttıkça daha küçük alan
-            r = W / bh
-            bw0 = min(im.width, im.height * r); bh0 = bw0 / r
-            cw, ch = bw0 / z, bh0 / z
-            cx = im.width / 2
-            cy = min(max(im.height * 0.5, ch / 2), im.height - ch / 2)
-            box = (int(cx - cw / 2), int(cy - ch / 2), int(cx + cw / 2), int(cy + ch / 2))
-            crop = im.crop(box).resize((W, bh), Image.BILINEAR)
+            ci = p["mot"].frame(t - p["t"], prog)  # parallax + rüzgâr + parçacıklar
             # görsel bölge oranına göre kırp (resize zaten W x bh)
             region = frame[IMG_TOP:]
-            ci = np.asarray(crop, np.float32)
             m = mtop * a
             frame[IMG_TOP:] = region * (1 - m) + ci * m
             # yazı: sahne başlangıcından 0.15 sn sonra 0.5 sn'de belirir

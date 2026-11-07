@@ -21,6 +21,8 @@ import sys
 ROOT = os.path.dirname(os.path.abspath(__file__))
 STATE = os.path.join(ROOT, "state", "posted.json")
 AI_NOTE = "Görseller yapay zekâ ile çizildi, metin bize ait. Ses yapay zekâ ile üretildi (örnek ses: wite-tech/pocket-tts-turkish, CC BY 4.0)."
+if os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets", "voice", "gemini")):
+    AI_NOTE = "Görseller ve ses yapay zekâ ile üretildi, metin bize ait."
 
 
 def today_tr():

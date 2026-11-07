@@ -34,7 +34,7 @@ def main():
     scenes = []
     for i, (s, st) in enumerate(zip(ep["scenes"], starts), 1):
         scenes.append({"t": 0 if i == 1 else round(st - 0.3, 2), "img": os.path.join(img_dir, f"sahne{i}.png"),
-                       "text": s["text"]})
+                       "text": s["text"], "prompt": s.get("prompt", "")})
     VID.render(scenes, audio, out, total)
     print(f"Hazır: {out} ({total} sn)")
 
