@@ -20,7 +20,7 @@ def get(path, **params):
         return {"hata": str(e)[:400]}
 
 
-out = {"hesap": get(uid, fields="username,followers_count,follows_count,media_count")}
+out = {"hesap": get(uid, fields="username,name,biography,website,followers_count,follows_count,media_count")}
 out["hesap_insights"] = get(f"{uid}/insights", metric="reach,views,total_interactions",
                             period="day", metric_type="total_value")
 
