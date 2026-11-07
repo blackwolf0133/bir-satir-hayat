@@ -21,7 +21,7 @@ def get(path, **params):
 
 
 out = {"hesap": get(uid, fields="username,followers_count,follows_count,media_count")}
-out["hesap_insights"] = get(f"{uid}/insights", metric="reach,views,total_interactions,follower_count",
+out["hesap_insights"] = get(f"{uid}/insights", metric="reach,views,total_interactions",
                             period="day", metric_type="total_value")
 
 medya = get(f"{uid}/media", limit=50,
