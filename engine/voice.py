@@ -15,7 +15,8 @@ FILTERS = ("highpass=f=70,lowpass=f=11000,acompressor=threshold=-20dB:ratio=2.5:
 
 
 def clean(text):
-    return " ".join(text.replace("\n", " ").replace('"', "").replace("“", "").replace("”", "").split())
+    from .numbers import seslendirme_metni  # rakam / Roma rakamı / sıra sayısı -> yazı
+    return seslendirme_metni(" ".join(text.replace("\n", " ").replace('"', "").replace("“", "").replace("”", "").split()))
 
 
 def duration(path):
