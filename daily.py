@@ -20,7 +20,7 @@ import sys
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 STATE = os.path.join(ROOT, "state", "posted.json")
-AI_NOTE = "Görseller yapay zekâ ile çizildi, metin ve ses bize ait."
+AI_NOTE = "Görseller yapay zekâ ile çizildi, metin bize ait. Ses yapay zekâ ile üretildi (örnek ses: wite-tech/pocket-tts-turkish, CC BY 4.0)."
 
 
 def today_tr():
