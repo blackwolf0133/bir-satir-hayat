@@ -16,35 +16,42 @@ SR_GEM = 24000
 VARSAYILAN_MODELLER = "gemini-3.8-flash-lite-tts,gemini-3.1-flash-tts-preview,gemini-2.5-flash-preview-tts"
 
 
-def _istek(model, prompt, ses, key):
-    body = json.dumps({"contents": [{"parts": [{"text": prompt}]}],
-                       "generationConfig": {"responseModalities": ["AUDIO"], "speechConfig": {
-                           "voiceConfig": {"prebuiltVoiceConfig": {"voiceName": ses}}}}}).encode()
+def _istek(model, metin, ses, key, dil=True):
+    """Sadece okunacak metin gider (talimat okunmasın diye); Türkçe telaffuz dil koduyla sabitlenir."""
+    sc = {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": ses}}}
+    if dil:
+        sc["languageCode"] = "tr-TR"            # Türkçe telaffuzu sabitle
+    govde = {"generationConfig": {"responseModalities": ["AUDIO"], "speechConfig": sc},
+             # TTS modelleri gönderilen her metni okuyor: talimat YOK, sadece hikâye metni gider.
+             "contents": [{"role": "user", "parts": [{"text": metin}]}]}
     req = urllib.request.Request(
         f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
-        data=body, headers={"x-goog-api-key": key, "Content-Type": "application/json"})
+        data=json.dumps(govde).encode(), headers={"x-goog-api-key": key, "Content-Type": "application/json"})
     r = json.load(urllib.request.urlopen(req, timeout=240))
     return base64.b64decode(r["candidates"][0]["content"]["parts"][0]["inlineData"]["data"])
 
 
-def seslendir(metinler, ton):
+def seslendir(metinler, ton=None):
     """Tüm metinleri tek istekte okutur. (24 kHz float32 dizi, kullanılan model) döner; olmazsa RuntimeError."""
     key = os.environ["GEMINI_API_KEY"]
     ses = os.environ.get("GEMINI_VOICE", "Puck")
     modeller = [m.strip() for m in os.environ.get("GEMINI_TTS_MODELS", VARSAYILAN_MODELLER).split(",") if m.strip()]
-    prompt = (ton + " Read the paragraphs below in order, exactly as written. Between paragraphs, pause for "
-              "a full two seconds (silence). Do not add any words.\n\n" + "\n\n".join(metinler))
+    metin = "\n\n".join(metinler)
+    dil = True
     son = None
     for model in modeller:
         for deneme in range(3):
             try:
-                pcm = _istek(model, prompt, ses, key)
+                pcm = _istek(model, metin, ses, key, dil)
                 print(f"Gemini sesi: {model}, {ses} (tek istek, {len(metinler)} sahne)", flush=True)
                 return np.frombuffer(pcm, dtype="<i2").astype(np.float32) / 32768, model
             except urllib.error.HTTPError as e:
                 msg = e.read().decode()[:300]
                 son = f"{model}: HTTP {e.code} {msg}"
                 print(f"::warning::{son}", flush=True)
+                if e.code == 400 and dil and "language" in msg.lower():
+                    dil = False                # model dil kodunu desteklemiyorsa onsuz tekrar dene
+                    continue
                 if e.code == 429 and "minute" not in msg.lower():
                     break                      # günlük kota dolu: sıradaki modele geç
                 if e.code in (429, 500, 503):
