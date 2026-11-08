@@ -52,7 +52,7 @@ jobs:
       - name: Kurulum
         run: |
           sudo apt-get install -y -q ffmpeg >/dev/null
-          pip install -q numpy faster-whisper
+          pip install -q -r requirements.txt faster-whisper
       - name: Üret
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
