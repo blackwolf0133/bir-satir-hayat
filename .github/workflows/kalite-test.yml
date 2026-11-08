@@ -13,5 +13,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           pip install -q huggingface_hub
-          gh release download kalite-test -D img --repo "${{ github.repository }}"
+          sudo apt-get install -y -q ffmpeg >/dev/null
+          gh release download hazir-006 -D v --repo "${{ github.repository }}"
+          mkdir -p img && ffmpeg -v error -y -ss 1.0 -i v/006.mp4 -frames:v 1 -vf "crop=1080:1280:0:640" img/hatali_sahne1.png
           python tools/kalite_test.py img/hatali_sahne1.png "A father sits quietly at a kitchen table at dawn, drinking tea, looking out the window, thoughtful."
