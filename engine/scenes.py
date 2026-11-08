@@ -40,6 +40,24 @@ QA_PROMPT = (
     "\"sorun\": \"short description in Turkish or empty\"}}")
 
 
+def _qa_modeller(key):
+    """Önce ortamdaki liste, sonra Google'ın güncel listesinden görsel anlayan flash modelleri."""
+    import json, urllib.request
+    adlar = [m.strip() for m in os.environ.get("GEMINI_QA_MODELS", "gemini-3.8-flash").split(",") if m.strip()]
+    try:
+        req = urllib.request.Request("https://generativelanguage.googleapis.com/v1beta/models?pageSize=200",
+                                     headers={"x-goog-api-key": key})
+        for m in json.load(urllib.request.urlopen(req, timeout=30)).get("models", []):
+            ad = m["name"].split("/")[-1]
+            if ("flash" in ad and "generateContent" in m.get("supportedGenerationMethods", [])
+                    and not any(x in ad for x in ("tts", "image", "live", "audio", "embedding", "thinking"))
+                    and ad not in adlar):
+                adlar.append(ad)
+    except Exception as e:  # noqa: BLE001
+        print(f"::warning::Model listesi alınamadı: {e}", flush=True)
+    return adlar[:6]
+
+
 def kalite(png, desc):
     """Gemini görsel modeliyle hata kontrolü. (ok, şiddet, sorun) ya da kontrol yapılamazsa None."""
     key = os.environ.get("GEMINI_API_KEY")
@@ -47,21 +65,29 @@ def kalite(png, desc):
         return None
     import base64, json, urllib.error, urllib.request
     img = base64.b64encode(open(png, "rb").read()).decode()
-    for model in os.environ.get("GEMINI_QA_MODELS", "gemini-3.8-flash,gemini-2.5-flash").split(","):
+    for model in _qa_modeller(key):
         body = {"contents": [{"parts": [{"inline_data": {"mime_type": "image/png", "data": img}},
                                         {"text": QA_PROMPT.format(desc=desc)}]}],
                 "generationConfig": {"responseMimeType": "application/json", "temperature": 0}}
-        try:
-            req = urllib.request.Request(
-                f"https://generativelanguage.googleapis.com/v1beta/models/{model.strip()}:generateContent",
-                data=json.dumps(body).encode(), headers={"x-goog-api-key": key, "Content-Type": "application/json"})
-            r = json.load(urllib.request.urlopen(req, timeout=120))
-            j = json.loads(r["candidates"][0]["content"]["parts"][0]["text"])
-            return bool(j.get("ok")), int(j.get("siddet", 0)), str(j.get("sorun", ""))
-        except (urllib.error.HTTPError, urllib.error.URLError, KeyError, IndexError, ValueError, TimeoutError) as e:
-            print(f"::warning::Görsel kontrol ({model}) olmadı: {e}", flush=True)
+        for deneme in range(3):
+            try:
+                req = urllib.request.Request(
+                    f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
+                    data=json.dumps(body).encode(), headers={"x-goog-api-key": key, "Content-Type": "application/json"})
+                r = json.load(urllib.request.urlopen(req, timeout=120))
+                j = json.loads(r["candidates"][0]["content"]["parts"][0]["text"])
+                print(f"  görsel kontrol modeli: {model}", flush=True)
+                return bool(j.get("ok")), int(j.get("siddet", 0)), str(j.get("sorun", ""))
+            except urllib.error.HTTPError as e:
+                print(f"::warning::Görsel kontrol ({model}) olmadı: HTTP {e.code}", flush=True)
+                if e.code in (429, 500, 503):
+                    time.sleep(15 * (deneme + 1))
+                    continue
+                break
+            except (urllib.error.URLError, KeyError, IndexError, ValueError, TimeoutError) as e:
+                print(f"::warning::Görsel kontrol ({model}) olmadı: {e}", flush=True)
+                break
     return None
-
 
 def main():
     import json
