@@ -128,6 +128,7 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_VOICE: "Fenrir"
+          PYTHONUNBUFFERED: "1"
         run: |
           # assets/voice/gemini dosyası varsa (onaydan sonra) Gemini (Fenrir) sesi kullanılır.
           if [ -n "$GEMINI_API_KEY" ] && [ -f assets/voice/gemini ]; then export VOICE_ENGINE=gemini; fi

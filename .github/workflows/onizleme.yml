@@ -43,6 +43,7 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_VOICE: "Fenrir"
+          PYTHONUNBUFFERED: "1"
           VOICE_ENGINE: ${{ inputs.ses }}
         run: |
           ep=$(ls episodes/${{ inputs.bolum }}_*.json)
