@@ -53,7 +53,7 @@ jobs:
     needs: sec
     if: needs.sec.outputs.id != ''
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 150
     strategy:
       fail-fast: false
       matrix:
@@ -83,6 +83,9 @@ jobs:
           key: hf-klein4b-v1
       - run: pip install huggingface_hub
       - name: Çiz
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PYTHONUNBUFFERED: "1"
         run: python -m engine.scenes "${{ needs.sec.outputs.path }}" ${{ matrix.sahne }} ~/sdbin/sd-cli out
       - name: Sürüme ekle
         env:

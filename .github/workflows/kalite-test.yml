@@ -1,0 +1,17 @@
+# Görsel kalite kontrolünü "kalite-test" sürümündeki resimle dener. Hiçbir şey paylaşmaz.
+name: Kalite testi
+on:
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Dene
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          pip install -q huggingface_hub
+          gh release download kalite-test -D img --repo "${{ github.repository }}"
+          python tools/kalite_test.py img/hatali_sahne1.png "A father sits quietly at a kitchen table at dawn, drinking tea, looking out the window, thoughtful."
