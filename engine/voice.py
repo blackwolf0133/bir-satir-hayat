@@ -10,6 +10,8 @@ SR = 44100
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 EMOTION = os.environ.get("VOICE_EMOTION", "sakin")
 TEMPO = float(os.environ.get("VOICE_TEMPO", "1.0"))
+TRIM = ("silenceremove=start_periods=1:start_threshold=-45dB,areverse,"
+        "silenceremove=start_periods=1:start_threshold=-45dB,areverse,")
 FILTERS = ("highpass=f=70,lowpass=f=11000,acompressor=threshold=-20dB:ratio=2.5:attack=8:release=120,"
            "aecho=0.8:0.6:45|90:0.18|0.10,loudnorm=I=-16:TP=-1.5:LRA=7")
 
@@ -31,7 +33,7 @@ CB_CFG = float(os.environ.get("CB_CFG", "0.5"))
 
 
 def _post(raw, dst):
-    af = (f"atempo={TEMPO}," if abs(TEMPO - 1) > 0.01 else "") + FILTERS
+    af = TRIM + (f"atempo={TEMPO}," if abs(TEMPO - 1) > 0.01 else "") + FILTERS
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", raw, "-af", af, "-ar", str(SR), "-ac", "1", dst], check=True)
     os.remove(raw)
 
@@ -72,7 +74,7 @@ def _gem_models():
 
 
 GEM_VOICE = os.environ.get("GEMINI_VOICE", "Fenrir")
-GEM_PROMPT = ("Read this Turkish line aloud slowly, warmly and softly, like a heartfelt, emotional narrator "
+GEM_PROMPT = ("Read this Turkish text aloud slowly, warmly and softly, like a heartfelt, emotional narrator "
               "speaking to someone they love. Natural Istanbul Turkish, calm pace, gentle and sincere:")
 
 
@@ -119,22 +121,24 @@ def _gemini_pcm(text):
 
 
 def speak_lines_gemini(lines, workdir):
+    """Bölüm başına TEK istek: bütün satırlar bir kerede okunur, duraklamalardan satırlara bölünür."""
+    import numpy as np
+    from . import gemini_ses
     os.makedirs(workdir, exist_ok=True)
-    print(f"Ses: Google Gemini, {GEM_VOICE}")
-    trim = ("silenceremove=start_periods=1:start_threshold=-45dB,areverse,"
-            "silenceremove=start_periods=1:start_threshold=-45dB,areverse,")
+    os.environ.setdefault("GEMINI_VOICE", GEM_VOICE)
+    metinler = [clean(l) for l in lines]
+    a24, _ = gemini_ses.seslendir(metinler, GEM_PROMPT)
     out = []
-    for i, line in enumerate(lines, 1):
+    for i, part in enumerate(gemini_ses.bol(a24, 24000, metinler), 1):
         raw = os.path.join(workdir, f"v{i}_raw.pcm")
-        open(raw, "wb").write(_gemini_pcm(clean(line)))
+        (np.clip(part, -1, 1) * 32767).astype("<i2").tofile(raw)
         dst = os.path.join(workdir, f"v{i}.wav")
-        af = trim + (f"atempo={TEMPO}," if abs(TEMPO - 1) > 0.01 else "") + FILTERS
+        af = TRIM + (f"atempo={TEMPO}," if abs(TEMPO - 1) > 0.01 else "") + FILTERS
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "s16le", "-ar", "24000", "-ac", "1", "-i", raw,
                         "-af", af, "-ar", str(SR), "-ac", "1", dst], check=True)
         os.remove(raw)
         out.append((dst, duration(dst)))
     return out
-
 
 def speak_lines(lines, workdir):
     if ENGINE == "gemini":

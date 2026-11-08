@@ -148,7 +148,7 @@ def render(scenes, audio, out, total):
             tl = p["txt"]
             al = tl[..., 3:4] / 255 * ta
             frame[:IMG_TOP] = frame[:IMG_TOP] * (1 - al) + tl[..., :3] * al
-        sig_start = prepared[-1]["t"] + 2.2
+        sig_start = prepared[-1]["t"] + 1.5
         if t >= sig_start:
             signature(frame, min(1, (t - sig_start) / 1.0), prepared[-1]["bottom"], 1.0)
         ff.stdin.write(frame.clip(0, 255).astype(np.uint8).tobytes())

@@ -4,10 +4,10 @@ import json, os, sys
 from . import voice as V
 from . import video as VID
 
-LEAD = 0.6       # ilk cümleden önce sessizlik
-GAP = 0.85       # cümleler arası nefes
-LONG_GAP = 1.1   # son cümleden önce
-TAIL = 3.6       # son cümleden sonra (imza çizilir)
+LEAD = 0.3       # ilk cümleden önce sessizlik
+GAP = 0.35       # cümleler arası nefes
+LONG_GAP = 0.6   # son cümleden önce
+TAIL = 2.6       # son cümleden sonra (imza çizilir)
 
 
 def plan(durs):
@@ -17,7 +17,7 @@ def plan(durs):
             t += LONG_GAP - GAP
         starts.append(t)
         t += d + GAP
-    total = max(starts[-1] + durs[-1] + 1.6, starts[-1] + TAIL)
+    total = max(starts[-1] + durs[-1] + 1.2, starts[-1] + TAIL)
     return starts, round(total, 2)
 
 
