@@ -1,0 +1,70 @@
+# İçten okuma denemeleri (Fenrir + yeni fon müziği). Hiçbir şey paylaşmaz.
+name: Duygu testi
+
+on:
+  workflow_dispatch:
+    inputs:
+      bolum:
+        default: "006"
+
+permissions:
+  contents: write
+
+jobs:
+  hazirla:
+    runs-on: ubuntu-latest
+    outputs:
+      tag: ${{ steps.t.outputs.tag }}
+    steps:
+      - id: t
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="duygu-test-$(date +%m%d%H%M)"
+          gh release create "$tag" --prerelease --title "İçten okuma denemeleri" --notes "Paylaşılmadı." --repo "${{ github.repository }}"
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+  uret:
+    needs: hazirla
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        include:
+          - ad: "1_simdiki"
+            duygu: ""
+            etiket: ""
+            tempo: "1.0"
+          - ad: "2_yavas_uc_nokta"
+            duygu: "1"
+            etiket: ""
+            tempo: "0.93"
+          - ad: "3_etiket_softly"
+            duygu: "1"
+            etiket: "[softly, with emotion]"
+            tempo: "0.95"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Kurulum
+        run: |
+          sudo apt-get install -y -q ffmpeg >/dev/null
+          pip install -q numpy faster-whisper
+      - name: Üret
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_VOICE: "Fenrir"
+          VOICE_ENGINE: gemini
+          METIN_DUYGU: ${{ matrix.duygu }}
+          GEMINI_ETIKET: ${{ matrix.etiket }}
+          VOICE_TEMPO: ${{ matrix.tempo }}
+          GEMINI_DENEME: "2"
+          PYTHONUNBUFFERED: "1"
+        run: python tools/duygu_test.py ${{ inputs.bolum }} out ${{ matrix.ad }}
+      - name: Sürüme ekle
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload "${{ needs.hazirla.outputs.tag }}" out/*.mp3 --repo "${{ github.repository }}"

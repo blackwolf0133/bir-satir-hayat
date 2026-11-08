@@ -3,13 +3,15 @@
 VOICE_ENGINE=pocket verilirse eski düzen: kullanıcının klonlanmış sesi (pocket-tts-turkish).
 Her cümle ayrı dosya olarak üretilir; süreleri sahne zamanlamasında kullanılır.
 Kullanıcı sesi yalnızca assets/voice/aktif varken ve /tmp/ref.wav çözülmüşken kullanılır."""
-import os, subprocess, wave
+import os
+import re, subprocess, wave
 import numpy as np
 
 SR = 44100
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 EMOTION = os.environ.get("VOICE_EMOTION", "sakin")
 TEMPO = float(os.environ.get("VOICE_TEMPO", "1.0"))
+MUSIC_VOL = float(os.environ.get("MUSIC_VOL", "0.3"))
 TRIM = ("silenceremove=start_periods=1:start_threshold=-45dB,areverse,"
         "silenceremove=start_periods=1:start_threshold=-45dB,areverse,")
 FILTERS = ("highpass=f=70,lowpass=f=11000,acompressor=threshold=-20dB:ratio=2.5:attack=8:release=120,"
@@ -127,6 +129,11 @@ def speak_lines_gemini(lines, workdir):
     os.makedirs(workdir, exist_ok=True)
     os.environ.setdefault("GEMINI_VOICE", GEM_VOICE)
     metinler = [clean(l) for l in lines]
+    if os.environ.get("METIN_DUYGU"):          # içten okuma: cümle sonlarında üç nokta (daha uzun, yumuşak duraklar)
+        metinler = [re.sub(r"[.!]+$", "…", m.strip()) for m in metinler]
+    etiket = os.environ.get("GEMINI_ETIKET", "").strip()
+    if etiket:                                 # ör. [softly] — modelin ses etiketi
+        metinler = [f"{etiket} {m}" for m in metinler]
     a24, _ = gemini_ses.seslendir(metinler, GEM_PROMPT)
     out = []
     for i, part in enumerate(gemini_ses.bol(a24, 24000, metinler), 1):
@@ -172,30 +179,72 @@ def speak_lines(lines, workdir):
     return out
 
 
+def _piano_note(f, dur, sr, vel=1.0, rng=None):
+    """Sıcak piyano tınısı: hafif inharmonik harmonikler, her harmoniğin kendi sönümü, yumuşak vuruş."""
+    t = np.arange(int(sr * dur)) / sr
+    out = np.zeros_like(t)
+    B = 0.0004                                            # tel sertliği (inharmoniklik)
+    for k, amp in enumerate([1.0, 0.42, 0.22, 0.12, 0.07, 0.04], 1):
+        fk = f * k * np.sqrt(1 + B * k * k)
+        decay = 1.1 + 0.9 * k                            # tiz harmonikler daha hızlı söner
+        det = 1 + (rng.uniform(-0.0006, 0.0006) if rng is not None else 0)
+        out += amp * np.sin(2 * np.pi * fk * det * t) * np.exp(-t * decay * (f / 440) ** 0.35)
+    att = 1 - np.exp(-t * 180)
+    return out * att * vel
+
+
+def _pad(freqs, dur, sr):
+    """Yumuşak yaylı katmanı: hafif detune edilmiş, az harmonikli, yavaş giriş/çıkış."""
+    t = np.arange(int(sr * dur)) / sr
+    out = np.zeros_like(t)
+    for f in freqs:
+        for d in (-0.004, 0.0, 0.0045):
+            ph = np.random.uniform(0, 6.28)
+            for k, amp in ((1, 1.0), (2, 0.28), (3, 0.12)):
+                out += amp * np.sin(2 * np.pi * f * (1 + d) * k * t + ph)
+    vib = 1 + 0.06 * np.sin(2 * np.pi * 0.23 * t)
+    env = np.minimum(1, t / 1.6) * np.minimum(1, (dur - t) / 1.4).clip(0, 1)
+    return out * env * vib
+
+
+def _ekle(buf, s, x):
+    if 0 <= s < len(buf):
+        e = min(len(buf), s + len(x))
+        buf[s:e] += x[: e - s]
+
+
 def piano_bed(seconds, sr=SR):
-    """Yumuşak arpej: Am - F - C - G, tamamen sentetik (telifsiz)."""
-    chords = [[57, 60, 64, 69], [53, 57, 60, 65], [48, 55, 60, 64], [55, 59, 62, 67]]
-    beat = 0.55
-    n = int(seconds * sr) + sr * 3
-    buf = np.zeros(n, dtype=np.float32)
-    t_note = np.arange(int(sr * 2.6)) / sr
-    env = np.exp(-t_note * 2.2) * (1 - np.exp(-t_note * 80))
-    pos, i = 0.0, 0
-    while pos < seconds + 1:
-        ch = chords[(i // 8) % 4]
-        note = ch[[0, 1, 2, 3, 2, 1, 2, 3][i % 8]]
-        f = 440 * 2 ** ((note - 69) / 12)
-        tone = (np.sin(2 * np.pi * f * t_note) + 0.35 * np.sin(4 * np.pi * f * t_note)
-                + 0.12 * np.sin(6 * np.pi * f * t_note)) * env
-        if i % 8 == 0:
-            tone += 0.6 * np.sin(np.pi * f * t_note) * np.exp(-t_note * 1.2)
-        s = int(pos * sr)
-        e = min(n, s + len(tone))
-        buf[s:e] += tone[: e - s] * 0.22
-        pos += beat
+    """Duygusal fon: yavaş, hüzünlü piyano (Am - F - C - Em) + yaylı katmanı. Tamamen sentetik (telifsiz)."""
+    rng = np.random.default_rng(7)
+    np.random.seed(7)
+    mid = lambda n: 440 * 2 ** ((n - 69) / 12)            # noqa: E731
+    chords = [(45, [57, 60, 64, 69, 72]), (41, [53, 57, 60, 65, 69]),
+              (48, [55, 60, 64, 67, 72]), (40, [55, 59, 64, 67, 71])]
+    bar = 3.6                                            # her akor 3,6 sn (yavaş)
+    n = int((seconds + 10) * sr)
+    piano = np.zeros(n, np.float32)
+    pad = np.zeros(n, np.float32)
+    pattern = [0, 2, 3, 4, 3, 2]                         # yumuşak arpej
+    t0, i = 0.0, 0
+    while t0 < seconds + 1:
+        bass, notes = chords[i % 4]
+        s = int(t0 * sr)
+        nb = _piano_note(mid(bass), 4.5, sr, 0.55, rng)
+        _ekle(piano, s, nb)
+        for j, idx in enumerate(pattern):
+            ts = t0 + j * bar / len(pattern) + rng.uniform(-0.02, 0.02)   # insan eli gibi hafif kayma
+            vel = 0.32 + 0.12 * (j == 0) + rng.uniform(-0.04, 0.04)
+            nt = _piano_note(mid(notes[idx]), 3.2, sr, vel, rng)
+            ss = int(ts * sr)
+            _ekle(piano, ss, nt)
+        pd = _pad([mid(notes[0] - 12), mid(notes[1] - 12), mid(notes[2])], bar + 1.4, sr) * 0.05
+        piano_s = int(max(0, t0 - 0.3) * sr)
+        _ekle(pad, piano_s, pd)
+        t0 += bar
         i += 1
-    buf = buf[: int(seconds * sr)]
-    return buf / (np.abs(buf).max() + 1e-6) * 0.9
+    mix = piano * 0.55 + pad
+    mix = mix[: int(seconds * sr)]
+    return mix / (np.abs(mix).max() + 1e-6) * 0.9
 
 
 def write_wav(path, a, sr=SR):
@@ -223,5 +272,9 @@ def assemble(parts, starts, total, out_path, workdir):
     write_wav(vw, voice)
     write_wav(mw, piano_bed(total))
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", vw, "-i", mw, "-filter_complex",
-                    f"[1]aecho=0.8:0.7:120|240:0.3|0.2,volume=0.13,afade=t=in:d=1.2,afade=t=out:st={total - 1.6:.2f}:d=1.5[m];"
-                    "[0][m]amix=inputs=2:duration=first:normalize=0", "-ar", str(SR), out_path], check=True)
+                    # müzik: yankı + yumuşatma; konuşma varken kısılır (sidechain), aralarda yükselir
+                    f"[1]lowpass=f=5200,aecho=0.8:0.82:70|140|230|370:0.32|0.24|0.17|0.11,volume={MUSIC_VOL},"
+                    f"afade=t=in:d=1.5,afade=t=out:st={total - 2.0:.2f}:d=1.9[m];"
+                    "[0]asplit=2[v][sc];"
+                    "[m][sc]sidechaincompress=threshold=0.03:ratio=3.5:attack=80:release=600[md];"
+                    "[v][md]amix=inputs=2:duration=first:normalize=0", "-ar", str(SR), out_path], check=True)

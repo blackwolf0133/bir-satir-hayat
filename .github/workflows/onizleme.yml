@@ -29,6 +29,7 @@ jobs:
           sudo apt-get update -q && sudo apt-get install -y -q ffmpeg
           pip install chatterbox-tts huggingface_hub
           pip install -r requirements.txt
+          pip install faster-whisper || echo "::warning::faster-whisper kurulamadı, okunuş kontrolü atlanacak"
           pip install transformers || true
       - name: Önbellek (modeller)
         uses: actions/cache@v4

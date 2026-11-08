@@ -31,7 +31,7 @@ def _istek(model, metin, ses, key, dil=True):
     return base64.b64decode(r["candidates"][0]["content"]["parts"][0]["inlineData"]["data"])
 
 
-def seslendir(metinler, ton=None):
+def _seslendir_bir(metinler, ton=None):
     """Tüm metinleri tek istekte okutur. (24 kHz float32 dizi, kullanılan model) döner; olmazsa RuntimeError."""
     key = os.environ["GEMINI_API_KEY"]
     ses = os.environ.get("GEMINI_VOICE", "Puck")
@@ -111,3 +111,66 @@ def bol(a, sr, metinler, min_sessizlik=0.16):
     kesim = [int(adaylar[j][0] * sr) for j in reversed(secim)]
     sinir = [0] + kesim + [len(a)]
     return [a[sinir[i]:sinir[i + 1]] for i in range(n)]
+
+
+# ---------------- okunuş kontrolü ----------------
+_W = {"model": None}
+
+
+def _norm(t):
+    import re
+    try:
+        from .numbers import seslendirme_metni
+        t = seslendirme_metni(t)
+    except Exception:  # noqa: BLE001
+        pass
+    t = re.sub(r"\[[^\]]*\]", " ", t)              # [yumuşak] gibi ses etiketlerini karşılaştırmaya katma
+    t = t.replace("İ", "i").replace("I", "ı").lower()
+    t = re.sub(r"[^a-zçğıöşü0-9 ]+", " ", t)
+    return t.split()
+
+
+def puanla(a, sr, metinler):
+    """Sesi yazıya döker, metinle karşılaştırır. (genel benzerlik, ilk cümle benzerliği, döküm) ya da None."""
+    try:
+        from faster_whisper import WhisperModel
+    except ImportError:
+        return None
+    import difflib, subprocess, tempfile
+    if _W["model"] is None:
+        _W["model"] = WhisperModel(os.environ.get("WHISPER_MODEL", "small"), device="cpu", compute_type="int8")
+    with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as f:
+        yol = f.name
+    pcm = (np.clip(a, -1, 1) * 32767).astype("<i2").tobytes()
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "s16le", "-ar", str(sr), "-ac", "1", "-i", "-", yol],
+                   input=pcm, check=True)
+    segs, _ = _W["model"].transcribe(yol, language="tr", beam_size=5)
+    dokum = " ".join(x.text.strip() for x in segs)
+    os.remove(yol)
+    bek, gel = "".join(_norm(" ".join(metinler))), "".join(_norm(dokum))   # harf bazlı, boşluksuz
+    genel = difflib.SequenceMatcher(None, bek, gel, autojunk=False).ratio()
+    ilk = "".join(_norm(metinler[0]))
+    ilk_puan = max(difflib.SequenceMatcher(None, ilk, gel[:len(ilk) + k], autojunk=False).ratio() for k in range(-3, 4))
+    return genel, ilk_puan, dokum
+
+
+def seslendir(metinler, ton=None):
+    """Seslendirir, yazıya döküp kontrol eder; yanlış okunduysa yeniden üretir (en fazla GEMINI_DENEME kez),
+    en doğru okunan sürümü döner."""
+    deneme = int(os.environ.get("GEMINI_DENEME", "3"))
+    en_iyi = None
+    for i in range(deneme):
+        a, model = _seslendir_bir(metinler, ton)
+        p = puanla(a, SR_GEM, metinler)
+        if p is None:
+            print("Okunuş kontrolü atlandı (faster-whisper yok)", flush=True)
+            return a, model
+        genel, ilk, dokum = p
+        print(f"Okunuş kontrolü {i + 1}/{deneme}: genel %{genel * 100:.0f}, ilk cümle %{ilk * 100:.0f}", flush=True)
+        print(f"  döküm: {dokum[:300]}", flush=True)
+        skor = min(genel, ilk)
+        if en_iyi is None or skor > en_iyi[0]:
+            en_iyi = (skor, a, model)
+        if genel >= 0.9 and ilk >= 0.97:
+            break
+    return en_iyi[1], en_iyi[2]
