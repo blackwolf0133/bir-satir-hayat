@@ -139,12 +139,20 @@ def render(scenes, audio, out, total):
         frame = bg.copy()
         for p, a, prog in frame_layers:
             ci = p["mot"].frame(t - p["t"], prog)  # parallax + rüzgâr + parçacıklar
+            if t < 0.8:  # ilk 0,8 sn hızlı zoom (kalıp kırma)
+                z = 1.14 - 0.14 * (1 - (1 - t / 0.8) ** 3)
+                hh, ww = ci.shape[:2]
+                chh, cww = int(hh / z), int(ww / z)
+                y0, x0 = (hh - chh) // 2, (ww - cww) // 2
+                ci = np.asarray(Image.fromarray(ci[y0:y0 + chh, x0:x0 + cww].clip(0, 255).astype(np.uint8))
+                                .resize((ww, hh), Image.BILINEAR), np.float32)
             # görsel bölge oranına göre kırp (resize zaten W x bh)
             region = frame[IMG_TOP:]
             m = mtop * a
             frame[IMG_TOP:] = region * (1 - m) + ci * m
             # yazı: sahne başlangıcından 0.15 sn sonra 0.5 sn'de belirir
-            ta = a * min(1, max(0, (t - p["t"] - 0.1) / 0.5)) if p is frame_layers[-1][0] else a
+            # ilk sahnenin yazısı 0. karede tam görünür (13 Kasım: sessiz izleyen ilk saniyede okusun)
+            ta = (a if p is prepared[0] else a * min(1, max(0, (t - p["t"] - 0.1) / 0.5))) if p is frame_layers[-1][0] else a
             tl = p["txt"]
             al = tl[..., 3:4] / 255 * ta
             frame[:IMG_TOP] = frame[:IMG_TOP] * (1 - al) + tl[..., :3] * al
