@@ -1,0 +1,41 @@
+{
+  "id": "021",
+  "slug": "ogretmen",
+  "title": "Öğretmen",
+  "characters": {
+    "TEACHER": "a female teacher in her fifties with short grey-streaked brown hair and round glasses, wearing a long olive green cardigan",
+    "PUPIL": "a girl of about ten with a short black bob haircut, wearing a red pinafore over a white shirt",
+    "WOMAN": "a woman of about thirty with a short black bob haircut, wearing a red blazer",
+    "OLDTEACHER": "the same teacher, now in her seventies with short white hair and round glasses, wearing a long olive green cardigan"
+  },
+  "scenes": [
+    {
+      "text": "Seni en çok kızdıran öğretmenin,\nbelki sana en çok inanandı.",
+      "prompt": "In a sunny classroom with autumn trees outside the window, {TEACHER} stands beside the wooden desk of {PUPIL} with a gentle but firm look, an open notebook lies on the desk, {PUPIL} frowns with her arms crossed."
+    },
+    {
+      "text": "Ödevini hep geri verir,\n\"Daha iyisini yaparsın\" derdi.",
+      "prompt": "{TEACHER} stands at the front of an empty classroom at the end of the day, looking out the window with a quiet hopeful smile, golden autumn leaves falling outside."
+    },
+    {
+      "text": "Sen kızar,\no akşam yine baştan yazardın.",
+      "prompt": "At night by the light of a desk lamp, {PUPIL} sits at a small desk at home with an open notebook in front of her, a determined face, rain on the window."
+    },
+    {
+      "text": "Yıllar sonra zor bir günde,\nkendine aynı cümleyi söyledin.",
+      "prompt": "In a quiet office at sunset, {WOMAN} sits at her desk with papers in front of her, lifting her head and looking out the window with a determined smile, golden light pouring in."
+    },
+    {
+      "text": "Bazı öğretmenler ders değil, ses bırakır.\nBunu öğretmenine gönder.",
+      "prompt": "In an autumn schoolyard at sunset, {WOMAN} on the left and {OLDTEACHER} on the right stand under a big tree smiling warmly at each other, golden leaves falling around them."
+    }
+  ],
+  "caption": "Öğretmenini hatırlıyor musun?\n\nBazı sesler yıllar sonra bile içinden konuşur. 🤍\n\nBunu öğretmenine gönder.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#öğretmen",
+    "#öğretmenlergünü",
+    "#öğretmenim",
+    "#teşekkürler"
+  ]
+}

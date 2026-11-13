@@ -1,0 +1,42 @@
+{
+  "id": "020",
+  "slug": "yere_oturmak",
+  "title": "Yere oturmak",
+  "characters": {
+    "MOM": "a young mother of about thirty with long wavy black hair in a loose ponytail, wearing a lavender sweater",
+    "KID": "her son, a boy of about five with curly brown hair, wearing a yellow sweater",
+    "GROWN": "the same boy grown up, a man of about thirty with curly brown hair, wearing a yellow sweater",
+    "LITTLEGIRL": "his little daughter, a girl of about three with curly brown hair, wearing a pink dress",
+    "GRANDMA": "the same mother, now in her sixties with grey wavy hair in a loose ponytail, wearing a lavender sweater"
+  },
+  "scenes": [
+    {
+      "text": "Çocuğun, aldığın oyuncakları değil,\nyere oturduğun günleri hatırlayacak.",
+      "prompt": "In a cozy living room in the evening, {MOM} looks tired but sits down cross-legged on a soft rug next to {KID}, who smiles up at her, wooden toy blocks scattered on the rug, warm lamp light."
+    },
+    {
+      "text": "Yorgun bir akşam halıda\nbirlikte kurduğunuz o eğri kuleyi.",
+      "prompt": "{MOM} and {KID} sit on the rug looking proudly at a tall crooked tower of wooden blocks between them, both laughing, warm lamp light, rain on the window."
+    },
+    {
+      "text": "Yağmurda su birikintisine\nseninle beraber atladığı günü.",
+      "prompt": "On a rainy autumn street, {MOM} and {KID}, both in raincoats and rubber boots, jump together into a big puddle, laughing, water splashing, golden leaves falling."
+    },
+    {
+      "text": "Bir gün o da yere oturacak,\nkendi çocuğunun yanına.",
+      "prompt": "Years later, {GROWN} sits cross-legged on a rug next to {LITTLEGIRL}, both looking at a crooked tower of wooden blocks between them, warm lamp light, rain on the window."
+    },
+    {
+      "text": "Miras, halıda geçen o akşamlardır.\nBunu yorgun bir anneye gönder.",
+      "prompt": "{GRANDMA} stands in a warm doorway smiling with teary eyes, looking toward a living room rug where a crooked tower of wooden blocks stands, lamp light, autumn leaves falling outside the window."
+    }
+  ],
+  "caption": "Çocuğun seni nasıl hatırlayacak?\n\nOyuncaklar unutulur, halıda geçen akşamlar unutulmaz. 🤍\n\nBunu yorgun bir anneye gönder.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#annelik",
+    "#çocuk",
+    "#ebeveyn",
+    "#anneçocuk"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "018",
+  "slug": "babana_sabir",
+  "title": "Babana sabır",
+  "characters": {
+    "FATHER": "a father in his thirties with thick black hair and a black mustache, wearing a navy blue knitted sweater",
+    "TODDLER": "his son, a toddler of about one with chubby cheeks, wearing a little red jumpsuit",
+    "OLDDAD": "the same father, now in his seventies with white hair and a white mustache, wearing a navy blue knitted sweater and reading glasses",
+    "MAN": "his grown son, a man of about thirty-five with short black hair, wearing a grey hoodie"
+  },
+  "scenes": [
+    {
+      "text": "Babana bir şeyi ikinci kez anlatırken\nsesin değişiyor, değil mi?",
+      "prompt": "In a cozy living room on a rainy evening, {OLDDAD} sits on a sofa looking hopeful, a smartphone lying on the coffee table in front of him, while {MAN} sits on the right with a tired, impatient face, looking away. Warm lamp light, rain on the window."
+    },
+    {
+      "text": "Oysa o sana yürümeyi öğretirken\ndüşüşlerini hiç saymadı.",
+      "prompt": "In a sunny autumn garden, {FATHER} kneels on the grass with open arms as {TODDLER} takes wobbly first steps toward him, golden leaves falling from the trees."
+    },
+    {
+      "text": "Her düştüğünde eğildi,\niç çekmeden yeniden kaldırdı.",
+      "prompt": "In the autumn garden, {TODDLER} sits on the grass after a small fall, and {FATHER} bends down with a patient smile to lift him up, leaves drifting in the wind."
+    },
+    {
+      "text": "O tuşu sorması bahane;\nistediği seninle beş dakika daha.",
+      "prompt": "{OLDDAD} sits on the sofa looking warmly at {MAN} instead of at the phone on the table, a soft smile under his white mustache, lamp light, rain on the window."
+    },
+    {
+      "text": "Bir dahakine yavaş anlat.\nBunu kardeşine gönder.",
+      "prompt": "On a garden bench under a big autumn tree at sunset, {OLDDAD} on the left and {MAN} on the right sit close together laughing, golden leaves falling around them."
+    }
+  ],
+  "caption": "Babana sabrın yetiyor mu?\n\nO sana hiç saymadan sabretti. 🤍\n\nBunu kardeşine gönder.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#baba",
+    "#babasevgisi",
+    "#babaoğul",
+    "#sabır"
+  ]
+}

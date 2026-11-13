@@ -1,0 +1,39 @@
+{
+  "id": "019",
+  "slug": "sali_aksami",
+  "title": "Salı akşamı",
+  "characters": {
+    "WIFE": "a woman of about forty with shoulder-length chestnut hair, wearing a cream knitted sweater and a long brown skirt",
+    "HUSBAND": "a man of about forty with short greying hair and glasses, wearing a burgundy sweater"
+  },
+  "scenes": [
+    {
+      "text": "Evliliğin en güzel anı düğün değil,\nsıradan bir salı akşamıdır.",
+      "prompt": "On a rainy autumn evening, a small house with one warm glowing window, seen from the garden, wet golden leaves on the path and falling from a big tree."
+    },
+    {
+      "text": "O yorgun gelir,\nsen sormadan çayı demlersin.",
+      "prompt": "On a rainy evening, {HUSBAND} steps in through the front door with a wet closed umbrella, looking tired, while {WIFE} in the warm kitchen behind him puts a teapot on the stove, smiling. Warm lamp light."
+    },
+    {
+      "text": "Kumandayı ona bırakırsın,\no battaniyeyi sana.",
+      "prompt": "{WIFE} on the left and {HUSBAND} on the right sit on a sofa under one shared woolly blanket, two cups of tea on the low table in front of them, rain on the window, warm lamp light."
+    },
+    {
+      "text": "Ne çiçek var ne şarkı;\nkimse bu anın fotoğrafını çekmez.",
+      "prompt": "{WIFE} and {HUSBAND} sit quietly side by side on the sofa reading, a glowing candle and a teapot on the table in front of them, rain streaking the dark window, cozy lamp light."
+    },
+    {
+      "text": "Ama aşk, işte bu salılarda büyür.\nBunu eşine gönder.",
+      "prompt": "In the lamp-lit living room, {WIFE} rests her head on {HUSBAND}'s shoulder on the sofa, both smiling with closed eyes, a candle glowing on the table, rain and autumn leaves outside the window."
+    }
+  ],
+  "caption": "Eşin bunu bilmeli.\n\nBüyük günler geçer, sıradan akşamlar kalır. 🤍\n\nBunu eşine gönder.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#eşim",
+    "#evlilik",
+    "#evlilikhayatı",
+    "#sevgi"
+  ]
+}

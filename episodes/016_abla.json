@@ -1,0 +1,41 @@
+{
+  "id": "016",
+  "slug": "abla",
+  "title": "Abla",
+  "characters": {
+    "SIS": "a girl of about twelve with long black hair in one braid, wearing a blue school pinafore over a white shirt",
+    "LITTLE": "her little brother, a boy of about six with messy brown hair, wearing a green sweater",
+    "WOMAN": "a woman of about thirty-five with long black hair in one braid, wearing a blue coat",
+    "MAN": "a man of about thirty with messy brown hair, wearing a green sweater"
+  },
+  "scenes": [
+    {
+      "text": "Ablan, sen doğduğun gün\nbiraz büyümek zorunda kaldı.",
+      "prompt": "In a cozy lamp-lit bedroom at night, {SIS} leans over a wooden cradle and looks at a sleeping baby with a serious, caring face, snow falling softly outside the window."
+    },
+    {
+      "text": "Okul yolunda\nçantanı hep o taşırdı.",
+      "prompt": "{SIS} walks along a leafy autumn path carrying two school backpacks, a blue one and a small yellow one, while {LITTLE} runs ahead happily chasing falling leaves."
+    },
+    {
+      "text": "Arkadaşları oynarken o,\nkapıda seni beklerdi.",
+      "prompt": "{SIS} sits alone on the front steps of a house, waiting patiently, while other children play ball in the distance under golden autumn trees, leaves drifting down."
+    },
+    {
+      "text": "Sen büyüdün;\nkimse ona \"Sen de çocuktun\" demedi.",
+      "prompt": "{WOMAN} sits alone by a rainy window in the evening, looking out thoughtfully, a cup of tea on the windowsill in front of her, warm lamp light."
+    },
+    {
+      "text": "Bugün o cümleyi ona sen söyle.\nBunu ablana gönder.",
+      "prompt": "On a park bench under a big autumn tree at sunset, {WOMAN} on the left and {MAN} on the right sit close together, his arm around her shoulder, she smiles with teary eyes, golden leaves falling."
+    }
+  ],
+  "caption": "Ablana teşekkür ettin mi?\n\nBazı ablalar çocukluklarının yarısını kardeşlerine verir. 🤍\n\nBunu ablana gönder.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#abla",
+    "#ablakardeş",
+    "#kardeş",
+    "#kardeşsevgisi"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "017",
+  "slug": "komsu",
+  "title": "Komşu",
+  "characters": {
+    "WOMAN": "a young woman of about twenty-eight with short curly red hair, wearing a teal knitted sweater",
+    "NEIGHBOR": "an elderly woman with grey hair in a bun and round glasses, wearing a long green cardigan"
+  },
+  "scenes": [
+    {
+      "text": "Yıllardır aynı duvarı paylaştığın komşunun\nadını biliyor musun?",
+      "prompt": "In a quiet apartment stairwell on an autumn evening, {WOMAN} stands in front of her own door and looks thoughtfully at the closed door next to hers, a warm lamp glowing on the landing."
+    },
+    {
+      "text": "Eskiden kapıdan bir tabak gelirdi,\nasla boş geri dönmezdi.",
+      "prompt": "A covered plate of homemade cookies sits on a doormat in front of a wooden apartment door, a warm lamp glowing above, autumn leaves blown in through an open stairwell window."
+    },
+    {
+      "text": "Şimdi merdivende bile\ngöz göze gelmiyoruz.",
+      "prompt": "In an apartment stairwell, {WOMAN} on the left walks up the stairs looking down, {NEIGHBOR} on the right walks down the stairs looking down, they pass without looking at each other, rain on the stairwell window."
+    },
+    {
+      "text": "Oysa zor bir gecede\nkapını ilk çalan, komşun olur.",
+      "prompt": "During a power cut on a rainy night, {NEIGHBOR} stands in the open doorway on the right with a glowing lantern, {WOMAN} on the left looks relieved and grateful, warm golden light on their faces."
+    },
+    {
+      "text": "Bu akşam bir tabakla kapısını çal.\nBunu apartman grubuna gönder.",
+      "prompt": "On a warm lamp-lit apartment landing, {WOMAN} on the left and {NEIGHBOR} on the right laugh together in an open doorway, a plate of cookies on a small table beside the door, autumn leaves outside the window."
+    }
+  ],
+  "caption": "Komşunu tanıyor musun?\n\nBir tabak, bir kapı, bir merhaba; eksik olan sadece bu. 🤍\n\nBunu apartman grubuna gönder.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#komşu",
+    "#komşuluk",
+    "#apartmanhayatı",
+    "#iyilik"
+  ]
+}

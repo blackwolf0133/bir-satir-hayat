@@ -1,0 +1,41 @@
+{
+  "id": "015",
+  "slug": "annen_tok",
+  "title": "Annen tok mu?",
+  "characters": {
+    "MOTHER": "a mother in her thirties with dark brown hair in a low bun, wearing a mustard yellow cardigan over a long green dress",
+    "BOY": "her son, a boy of about seven with short black hair, wearing a red striped sweater",
+    "MAN": "a man of about thirty with short black hair and a light beard, wearing a red sweater",
+    "OLDMOM": "the same mother, now in her sixties with grey hair in a low bun, wearing a mustard yellow cardigan"
+  },
+  "scenes": [
+    {
+      "text": "Annen \"Ben tokum\" dediğinde,\naslında hiç tok değildi.",
+      "prompt": "In a small warm kitchen on a rainy autumn evening, {MOTHER} sits at a wooden table with an empty plate in front of her, smiling softly at {BOY} who sits across from her. Rain on the window, a warm lamp above the table."
+    },
+    {
+      "text": "Son dilim hep sessizce\nsenin tabağına geçerdi.",
+      "prompt": "{BOY} sits at the kitchen table with a big slice of apple pie on a plate in front of him, eyes wide with joy, while {MOTHER} stands beside the table smiling at him. Warm lamp light, rain on the window."
+    },
+    {
+      "text": "Sen sorunca gülümser,\n\"Canım çekmedi\" derdi.",
+      "prompt": "{MOTHER} stands by the kitchen window with a calm gentle smile, an empty plate on the counter beside her, {BOY} looks up at her curiously. Autumn leaves blowing outside, warm lamp light."
+    },
+    {
+      "text": "Meğer seni doyurmak,\nonu herkesten çok doyururmuş.",
+      "prompt": "Years later in the same warm kitchen, {OLDMOM} stands by the table watching {MAN}, who sits with a full plate of food in front of him, her face glowing with quiet happiness. Rain on the window, warm lamp light."
+    },
+    {
+      "text": "Bu akşam son dilimi sen ona bırak.\nBunu annene gönder.",
+      "prompt": "{OLDMOM} sits at the kitchen table with a slice of apple pie on a plate in front of her, laughing, while {MAN} sits beside her smiling. A warm lamp and a glowing candle, autumn leaves falling outside the window."
+    }
+  ],
+  "caption": "Annen gerçekten tok mu?\n\nO hep son dilimi sana bıraktı. 🤍\n\nBunu annene gönder.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#anne",
+    "#annesevgisi",
+    "#annem",
+    "#anneoğul"
+  ]
+}
