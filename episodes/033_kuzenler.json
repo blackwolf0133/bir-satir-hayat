@@ -1,0 +1,41 @@
+{
+  "id": "033",
+  "slug": "kuzenler",
+  "title": "Kuzenler",
+  "characters": {
+    "COUSIN1": "a girl of about nine with two brown braids, wearing a red cardigan",
+    "COUSIN2": "a boy of about ten with curly black hair, wearing a green sweater",
+    "WOMAN": "a woman of about thirty-five with long brown hair in a braid, wearing a red dress",
+    "MAN": "a man of about thirty-five with curly black hair, wearing a dark green suit"
+  },
+  "scenes": [
+    {
+      "text": "Çocukken bayramları asıl özel yapan neydi,\nhatırlıyor musun?",
+      "prompt": "A big old family house with a garden at sunset, all its windows glowing warmly, autumn trees with golden leaves falling around it. No people visible."
+    },
+    {
+      "text": "Kalabalık bir ev,\nyer yataklarında fısıldaşan kuzenler.",
+      "prompt": "At night in a room lit by a small lamp, {COUSIN1} on the left and {COUSIN2} on the right lie on floor mattresses under thick quilts, whispering and giggling."
+    },
+    {
+      "text": "Bahçede saklambaç,\ngece yarısına kadar süren kahkahalar.",
+      "prompt": "In the garden of the old house at dusk, {COUSIN2} hides behind a big tree giggling, while {COUSIN1} on the left leans against another tree covering her eyes and counting, autumn leaves falling."
+    },
+    {
+      "text": "Şimdi sadece düğünlerde görüşüp\n\"Hiç değişmemişsin\" deyip ayrılıyorsunuz.",
+      "prompt": "At an evening garden wedding under strings of warm lights, {WOMAN} on the left and {MAN} on the right stand facing each other with polite, slightly shy smiles."
+    },
+    {
+      "text": "Bir düğün beklemeden kuzenlerini topla.\nBunu kuzen grubuna gönder.",
+      "prompt": "At sunset, {WOMAN} and {MAN} sit side by side on the front steps of the old family house laughing together, golden autumn leaves falling around them."
+    }
+  ],
+  "caption": "Kuzenlerin nerede?\n\nÇocukluğun en kalabalık yeri onlardı. 🤍\n\nBunu kuzen grubuna gönder.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#kuzenler",
+    "#kuzen",
+    "#çocukluk",
+    "#bayram"
+  ]
+}

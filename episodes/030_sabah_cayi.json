@@ -1,0 +1,39 @@
+{
+  "id": "030",
+  "slug": "sabah_cayi",
+  "title": "Sabah çayı",
+  "characters": {
+    "WIFE": "a woman in her thirties with long black hair in a braid, wearing a teal sweater",
+    "HUSBAND": "a man in his thirties with short brown hair and a short beard, wearing a mustard yellow sweater"
+  },
+  "scenes": [
+    {
+      "text": "Eşinle tartışmayı kazandığın gece,\nneden yine de uyuyamadın?",
+      "prompt": "At night in a dark bedroom, {WIFE} lies awake in bed looking up at the ceiling, pale moonlight through the window, rain on the glass."
+    },
+    {
+      "text": "Haklıydın;\nbütün cümleleri sen kurdun, o sustu.",
+      "prompt": "In a living room in the evening, {WIFE} on the left stands and talks with a frown, while {HUSBAND} on the right sits on the sofa looking down silently, warm lamp light."
+    },
+    {
+      "text": "Ama yatağın iki ucunda,\nsırt sırta uzandınız.",
+      "prompt": "At night in a bedroom lit by soft moonlight, {WIFE} and {HUSBAND} lie at the two far edges of the bed, turned away from each other, rain on the window."
+    },
+    {
+      "text": "Sabah biri sessizce\niki bardak çay koydu masaya.",
+      "prompt": "In a kitchen at sunrise, {HUSBAND} stands beside the table with a shy smile, two glasses of tea on the table, looking toward the doorway, golden light and autumn leaves outside the window."
+    },
+    {
+      "text": "Evlilikte haklı olan değil, önce çayı koyan kazanır.\nBunu eşine gönder.",
+      "prompt": "In the sunny kitchen in the morning, {WIFE} on the left and {HUSBAND} on the right sit at the table smiling at each other, two glasses of tea between them, an autumn tree outside the window."
+    }
+  ],
+  "caption": "Haklı olmak yetmez.\n\nBazen barışmak bir bardak çay kadar yakındır. 🤍\n\nBunu eşine gönder.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#evlilik",
+    "#eşim",
+    "#barışmak",
+    "#sabahçayı"
+  ]
+}

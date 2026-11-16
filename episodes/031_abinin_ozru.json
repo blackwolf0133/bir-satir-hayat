@@ -1,0 +1,41 @@
+{
+  "id": "031",
+  "slug": "abinin_ozru",
+  "title": "Abinin özrü",
+  "characters": {
+    "BROTHER": "a boy of about thirteen with shaggy black hair, wearing an orange sweater",
+    "KID": "a boy of about nine with short brown hair, wearing blue overalls",
+    "MAN": "a man of about thirty-five with shaggy black hair, wearing an orange scarf and a brown jacket",
+    "YOUNG": "a man of about thirty with short brown hair, wearing a blue denim jacket"
+  },
+  "scenes": [
+    {
+      "text": "Abin sana hiç \"Özür dilerim\" dedi mi?\nMuhtemelen hayır.",
+      "prompt": "In an autumn garden, {BROTHER} on the left and {KID} on the right sit at opposite ends of a wooden bench, turned away from each other with crossed arms, golden leaves falling."
+    },
+    {
+      "text": "Kavga ettiğiniz akşam,\nbisikletini sessizce sana bırakırdı.",
+      "prompt": "At sunset, a red bicycle leans against a wooden garden gate, and {BROTHER} walks away from it toward the house, seen from behind, autumn leaves on the path."
+    },
+    {
+      "text": "Küstüğünde,\nen sevdiğin çikolatayı yastığına koyardı.",
+      "prompt": "In a cozy bedroom in warm lamp light, {KID} stands in the doorway smiling in surprise at a chocolate bar lying on his pillow, rain on the window."
+    },
+    {
+      "text": "Taşındığın gün çağırmadan geldi,\nkolilerini tek başına taşıdı.",
+      "prompt": "On moving day in autumn, {MAN} carries a big cardboard box up the steps of an apartment building, while {YOUNG} on the right looks at him in happy surprise, golden leaves falling."
+    },
+    {
+      "text": "Bazı abiler özrü söylemez, gelir.\nBunu abine gönder.",
+      "prompt": "At sunset in an empty new apartment, {MAN} on the left and {YOUNG} on the right sit on cardboard boxes laughing together, warm golden light from a big window."
+    }
+  ],
+  "caption": "Abin seni sever.\n\nSöylemez belki ama hep gelir. 🤍\n\nBunu abine gönder.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#abi",
+    "#abim",
+    "#abikardeş",
+    "#kardeşbağı"
+  ]
+}

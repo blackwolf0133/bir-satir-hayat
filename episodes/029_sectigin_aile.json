@@ -1,0 +1,39 @@
+{
+  "id": "029",
+  "slug": "sectigin_aile",
+  "title": "Seçtiğin aile",
+  "characters": {
+    "FRIEND1": "a young woman of about twenty-eight with straight black hair, wearing a yellow raincoat",
+    "FRIEND2": "a young woman of about twenty-eight with short curly blond hair, wearing a wine red coat"
+  },
+  "scenes": [
+    {
+      "text": "Kötü haberi ilk kime söylüyorsan,\naslında ailen odur.",
+      "prompt": "On a rainy night, {FRIEND1} sits alone on the steps of an apartment building with her head down, rain falling, a glowing street lamp, puddles on the pavement."
+    },
+    {
+      "text": "Aranızda kan bağı yok,\nama sesinden ne olduğunu anlar.",
+      "prompt": "On a bench in an autumn park, {FRIEND2} on the right turns toward {FRIEND1} on the left with a caring, worried face, golden leaves falling around them."
+    },
+    {
+      "text": "Gece yarısı arasan da\n\"Neredesin, geliyorum\" der.",
+      "prompt": "On a rainy night street, {FRIEND2} hurries across the wet road under an open umbrella toward a lit apartment building, street lamps reflecting in the puddles."
+    },
+    {
+      "text": "Doğduğun aileyi sen seçmedin;\nonu ise sen seçtin.",
+      "prompt": "In a small cozy kitchen at night, {FRIEND1} on the left smiles through tears and {FRIEND2} on the right smiles back, two cups of tea and a glowing candle on the table, rain on the window."
+    },
+    {
+      "text": "Ve o da seni her gün yeniden seçiyor.\nBunu ona gönder.",
+      "prompt": "At sunset on an autumn path, {FRIEND1} and {FRIEND2} walk side by side laughing, seen from behind, golden leaves falling around them."
+    }
+  ],
+  "caption": "Aklına kim geldi?\n\nKan bağı olmayan aile de ailedir. 🤍\n\nBunu ona gönder.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#dostluk",
+    "#enyakınarkadaş",
+    "#kankam",
+    "#arkadaşlık"
+  ]
+}

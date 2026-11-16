@@ -1,0 +1,41 @@
+{
+  "id": "026",
+  "slug": "babanin_cuzdani",
+  "title": "Babanın cüzdanı",
+  "characters": {
+    "FATHER": "a father in his late forties with short salt-and-pepper hair and a neat beard, wearing a navy blue coat",
+    "GIRL": "a little girl of about five with curly red-brown hair, wearing a green dress",
+    "OLDFATHER": "the same father, now in his seventies with white hair and a neat white beard, wearing a navy blue cardigan",
+    "WOMAN": "a woman of about thirty with curly red-brown hair, wearing a green coat"
+  },
+  "scenes": [
+    {
+      "text": "Babanın cüzdanında,\nsenin çoktan unuttuğun bir şey var.",
+      "prompt": "On a rainy autumn evening, {OLDFATHER} sits in an armchair by the window under a warm lamp, an old worn brown leather wallet lying on the small table beside him, rain on the glass."
+    },
+    {
+      "text": "Beş yaşında çizdiğin,\nyamuk bir ev ile iki çöp adam.",
+      "prompt": "At a kitchen table in warm afternoon light, {GIRL} on the right proudly shows a simple child's crayon drawing lying on the table, and {FATHER} on the left looks at it with a big smile."
+    },
+    {
+      "text": "Kâğıt yıllar içinde yıprandı,\nköşeleri yumuşadı, rengi soldu.",
+      "prompt": "In a small cafe by a rainy window, {FATHER} sits alone smiling softly, an open leather wallet and a small folded child's drawing lying on the table in front of him, warm lamp light."
+    },
+    {
+      "text": "Cüzdan değişti, kartlar değişti;\no resim hep en arkada kaldı.",
+      "prompt": "At night under a desk lamp, a faded, softly creased child's crayon drawing of a little house lies unfolded on a wooden desk next to an old brown leather wallet, autumn leaves on the window sill."
+    },
+    {
+      "text": "Sen büyüdün ama onun için hâlâ\no kâğıttaki çocuksun. Bunu babana gönder.",
+      "prompt": "At sunset by a garden gate in autumn, {WOMAN} on the left rests her head on the shoulder of {OLDFATHER} on the right, both smiling, golden leaves falling around them."
+    }
+  ],
+  "caption": "Babana sor bakalım.\n\nBazı babalar sevgiyi cüzdanın en arkasında taşır. 🤍\n\nBunu babana gönder.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#baba",
+    "#babam",
+    "#babakız",
+    "#babasevgisi"
+  ]
+}

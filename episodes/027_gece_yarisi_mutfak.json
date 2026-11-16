@@ -1,0 +1,39 @@
+{
+  "id": "027",
+  "slug": "gece_yarisi_mutfak",
+  "title": "Gece yarısı mutfak",
+  "characters": {
+    "MOTHER": "a mother in her forties with wavy auburn hair, wearing a mustard yellow sweater",
+    "TEEN": "a teenage boy of about fifteen with messy dark hair, wearing a grey hoodie"
+  },
+  "scenes": [
+    {
+      "text": "Ergen çocuğun kapısını çarptığında,\nsandığın gibi senden kaçmıyor.",
+      "prompt": "In a dim hallway at home in the evening, {MOTHER} stands looking at a closed bedroom door with a worried, gentle face, warm lamp light, rain on the hallway window."
+    },
+    {
+      "text": "Sorularına \"İyi\", \"Bilmem\", \"Hiç\"\ndiye kısacık cevaplar verir.",
+      "prompt": "At a dinner table in warm lamp light, {TEEN} on the right looks down silently, while {MOTHER} on the left looks at him hopefully, two bowls of soup on the table."
+    },
+    {
+      "text": "Sonra bir gece yarısı, tam sen yorgunken,\nmutfağa gelip konuşmaya başlar.",
+      "prompt": "Late at night in a kitchen lit by a single small lamp, {MOTHER} sits tired at the table, and {TEEN} stands shyly in the kitchen doorway, rain on the dark window."
+    },
+    {
+      "text": "Okul, arkadaşlar, kırılan kalbi;\nher şey o saatte dökülür.",
+      "prompt": "Late at night at the kitchen table, {TEEN} on the right talks openly, and {MOTHER} on the left listens closely, two cups of tea and a glowing candle on the table in front of them, rain on the window."
+    },
+    {
+      "text": "O gece \"Yarın konuşuruz\" deme.\nBunu ergen çocuğu olan birine gönder.",
+      "prompt": "In the warm candle-lit kitchen late at night, {MOTHER} on the left and {TEEN} on the right laugh together at the table, rain softly running down the dark window."
+    }
+  ],
+  "caption": "Gece yarısı dinle.\n\nErgenler en önemli şeyleri en yorgun saatinde anlatır. 🤍\n\nBunu ergen çocuğu olan birine gönder.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#ergen",
+    "#ebeveynlik",
+    "#annelik",
+    "#çocukyetiştirmek"
+  ]
+}

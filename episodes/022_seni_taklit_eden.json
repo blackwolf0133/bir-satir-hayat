@@ -1,0 +1,41 @@
+{
+  "id": "022",
+  "slug": "seni_taklit_eden",
+  "title": "Seni taklit eden",
+  "characters": {
+    "BIGBOY": "a boy of about twelve with short black hair, wearing a red hoodie and blue jeans",
+    "LITTLE": "a little boy of about six with messy light brown hair, wearing a yellow striped t-shirt",
+    "MANBIG": "a man of about thirty-five with short black hair, wearing a red wool sweater",
+    "MANLITTLE": "a man of about thirty with messy light brown hair and a short beard, wearing a mustard yellow jacket"
+  },
+  "scenes": [
+    {
+      "text": "Küçük kardeşin seni neden hep taklit ederdi,\nhiç düşündün mü?",
+      "prompt": "In a sunny hallway at home, {BIGBOY} walks ahead on the left, and behind him on the right {LITTLE} proudly copies his walk in oversized sneakers far too big for his feet. Golden autumn light through the window."
+    },
+    {
+      "text": "Kıyafetlerini giyer,\nsenin gibi yürümeye çalışırdı.",
+      "prompt": "{LITTLE} stands proudly in a cozy bedroom wearing a red hoodie far too big for him, the sleeves hanging long, chin up like a big boy. Warm afternoon light, autumn leaves falling outside the window."
+    },
+    {
+      "text": "Sen kızar,\n\"Peşimden gelme\" derdin.",
+      "prompt": "At a bedroom doorway, {BIGBOY} on the left looks annoyed and is closing the door, while {LITTLE} on the right stands in the hallway looking up at him sadly. Soft evening lamp light."
+    },
+    {
+      "text": "Şimdi koca adam oldu;\nher büyük kararından önce yine seni arar.",
+      "prompt": "At sunset, {MANLITTLE} stands at a big window of a city apartment looking out thoughtfully, a phone lying on the desk beside him, autumn trees glowing outside."
+    },
+    {
+      "text": "Çünkü o hâlâ peşinden geliyor.\nBunu kardeşine gönder.",
+      "prompt": "On an autumn park path at sunset, {MANBIG} walks ahead on the left and {MANLITTLE} walks one step behind him on the right, both smiling, golden leaves falling around them, seen from the side."
+    }
+  ],
+  "caption": "Kardeşin seni izliyor.\n\nSen fark etmesen de hep senin izinden yürüdü. 🤍\n\nBunu kardeşine gönder.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#kardeş",
+    "#küçükkardeş",
+    "#kardeşlik",
+    "#kardeşsevgisi"
+  ]
+}

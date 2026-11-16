@@ -1,0 +1,41 @@
+{
+  "id": "023",
+  "slug": "dedenle_tavla",
+  "title": "Dedenle tavla",
+  "characters": {
+    "GRANDPA": "a grandfather in his seventies with white hair and a thick white mustache, wearing a beige knitted vest over a white shirt",
+    "BOY": "a boy of about eight with short dark brown hair, wearing a blue and white striped sweater",
+    "MAN": "a man of about thirty-five with short dark brown hair, wearing a blue sweater",
+    "SON": "a boy of about seven with short dark brown hair, wearing a green t-shirt"
+  },
+  "scenes": [
+    {
+      "text": "Dedenle oynadığın her tavlayı\nneden hep sen kazanırdın?",
+      "prompt": "In a garden under an apple tree in autumn, {GRANDPA} on the left and {BOY} on the right sit at a small wooden table with a wooden backgammon board between them, golden leaves falling, late afternoon sun."
+    },
+    {
+      "text": "Zarlar atılır,\no şaşkın şaşkın başını kaşırdı.",
+      "prompt": "{GRANDPA} sits at the garden table with a playfully puzzled face, looking down at the wooden backgammon board, an apple tree with autumn leaves behind him, warm golden light."
+    },
+    {
+      "text": "Sen sevinçten bağırırdın,\no gülümseyip taşları yeniden dizerdi.",
+      "prompt": "At the garden table, {BOY} on the right throws both arms up in joy, while {GRANDPA} on the left smiles warmly at him, a backgammon board on the table, autumn leaves drifting down."
+    },
+    {
+      "text": "Yıllar sonra oğlunla oynarken\nbilerek yanlış bir hamle yaptın.",
+      "prompt": "At the same wooden garden table under the apple tree at sunset, {MAN} on the left smiles knowingly while {SON} on the right leans over the backgammon board with an excited face, golden leaves falling."
+    },
+    {
+      "text": "İşte o an anladın: deden hiç kaybetmemişti.\nBunu dedesini özleyen birine gönder.",
+      "prompt": "{MAN} sits alone at the wooden garden table at sunset, smiling softly and looking up at the old apple tree, golden autumn leaves falling slowly around him, warm glowing sky."
+    }
+  ],
+  "caption": "Deden seni yendi mi?\n\nBazı yenilgiler sevginin en sessiz hâlidir. 🤍\n\nBunu dedesini özleyen birine gönder.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#dede",
+    "#dedem",
+    "#tavla",
+    "#çocukluk"
+  ]
+}

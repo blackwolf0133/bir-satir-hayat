@@ -1,0 +1,41 @@
+{
+  "id": "024",
+  "slug": "vardim_anne",
+  "title": "Vardım anne",
+  "characters": {
+    "MOM": "a mother in her late forties with dark hair in a low bun, wearing a plum colored cardigan",
+    "TEEN": "a teenage boy of about sixteen with short black hair, wearing a dark green jacket",
+    "OLDMOM": "the same mother, now in her sixties with grey hair in a low bun, wearing a plum colored cardigan",
+    "SON": "a man of about thirty with short black hair and light stubble, wearing a dark green coat"
+  },
+  "scenes": [
+    {
+      "text": "Annen, sen eve varmadan\nhâlâ uyuyamıyor; biliyor musun?",
+      "prompt": "On a rainy night, a small house with one warm glowing window, and {MOM} standing at the window looking out at the dark street, raindrops, glowing street lamp."
+    },
+    {
+      "text": "Çocukken gece geç kalırsan,\npencerede hep yanık bir ışık bulurdun.",
+      "prompt": "On a rainy night street, {TEEN} walks toward a small house, looking up at a warm glowing window where a lamp is on, puddles reflecting the light."
+    },
+    {
+      "text": "Şimdi başka bir şehirdesin;\no yine ışığı yakıp bekliyor.",
+      "prompt": "At night, {OLDMOM} sits in an armchair beside a lamp near the window, a phone lying on the small table beside her, looking toward it patiently, rain on the window glass."
+    },
+    {
+      "text": "Sen büyüdün,\nama onun beklemesi hiç büyümedi.",
+      "prompt": "In a big city at night in the rain, {SON} with a dark umbrella arrives at the entrance of a tall apartment building, street lamps glowing on wet pavement."
+    },
+    {
+      "text": "Bu gece ona sen yaz: \"Vardım anne.\"\nBunu annene gönder.",
+      "prompt": "At night, {OLDMOM} in her armchair smiles with relief at the phone glowing softly on the small table beside her, reaching to turn off the warm lamp, rain on the window."
+    }
+  ],
+  "caption": "Annen uyudu mu?\n\nSen eve varmadan onun gecesi bitmez. 🤍\n\nBunu annene gönder.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#anne",
+    "#annem",
+    "#gurbet",
+    "#özlem"
+  ]
+}

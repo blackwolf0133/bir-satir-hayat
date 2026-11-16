@@ -1,0 +1,41 @@
+{
+  "id": "025",
+  "slug": "cocukluk_arkadasi",
+  "title": "Çocukluk arkadaşı",
+  "characters": {
+    "KID1": "a boy of about nine with short ginger hair and freckles, wearing a blue jacket",
+    "KID2": "a boy of about nine with curly black hair, wearing an orange sweater",
+    "MAN1": "a man of about thirty-five with short ginger hair and a ginger beard, wearing a blue coat",
+    "MAN2": "a man of about thirty-five with curly black hair, wearing an orange scarf and a grey coat"
+  },
+  "scenes": [
+    {
+      "text": "Seni, sen daha \"sen\" olmadan tanıyan birini\nen son ne zaman aradın?",
+      "prompt": "On a quiet neighborhood street in autumn, {KID1} on the left and {KID2} on the right ride small bicycles side by side, laughing, golden leaves on the ground, late afternoon sun."
+    },
+    {
+      "text": "Aynı sokakta bisiklet sürer,\naynı ağaca tırmanırdınız.",
+      "prompt": "{KID1} and {KID2} sit together on a thick branch of a big old tree, smiling and looking at the sunset, autumn leaves falling, a quiet street below."
+    },
+    {
+      "text": "Sonra okullar, şehirler, işler\nsizi yavaş yavaş ayırdı.",
+      "prompt": "At sunset, on a long road that splits in two, {MAN1} walks down the left road and {MAN2} walks down the right road, seen from behind, autumn trees along both roads."
+    },
+    {
+      "text": "Ama çocukluk lakabını hâlâ bilen\ndünyadaki tek kişi o.",
+      "prompt": "{MAN1} sits alone on a balcony at sunset with a cup of tea on the small table beside him, smiling softly at a memory, autumn leaves drifting past."
+    },
+    {
+      "text": "Bazı numaralar silinmez, sadece aranmayı bekler.\nBunu çocukluk arkadaşına gönder.",
+      "prompt": "{MAN1} sits on an old bench under the same big tree on the childhood street at sunset, smiling, a phone lying on the bench beside him, golden autumn leaves falling."
+    }
+  ],
+  "caption": "Onu aradın mı?\n\nSeni lakabınla çağıran son kişi belki o. 🤍\n\nBunu çocukluk arkadaşına gönder.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#çocukluk",
+    "#çocuklukarkadaşı",
+    "#arkadaşlık",
+    "#dostluk"
+  ]
+}

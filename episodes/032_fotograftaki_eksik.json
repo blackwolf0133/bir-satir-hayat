@@ -1,0 +1,42 @@
+{
+  "id": "032",
+  "slug": "fotograftaki_eksik",
+  "title": "Fotoğraftaki eksik",
+  "characters": {
+    "DAD": "a father in his forties with short dark hair, wearing a white linen shirt",
+    "CHILD": "a little girl of about six with a dark ponytail, wearing a red swimsuit",
+    "MOM": "a mother in her forties with long dark hair in a ponytail, wearing a sunflower yellow dress",
+    "WOMAN": "a woman of about thirty with a dark ponytail, wearing a green cardigan",
+    "OLDMOM": "the same mother, now in her sixties with grey hair in a ponytail, wearing a sunflower yellow cardigan"
+  },
+  "scenes": [
+    {
+      "text": "Aile fotoğraflarına bak;\nannen neden hep eksik?",
+      "prompt": "A wooden shelf in a cozy living room with several framed family photos, warm lamp light, autumn leaves falling outside the window. No people in the room."
+    },
+    {
+      "text": "Denizde, bayramda, doğum günlerinde;\nherkes var, o yok.",
+      "prompt": "On a beach at sunset, {DAD} and {CHILD} kneel side by side building a sandcastle and smiling toward the viewer, gentle waves, golden sky."
+    },
+    {
+      "text": "Çünkü fotoğrafı hep o çekiyordu,\nhepinizi kareye sığdırmak için.",
+      "prompt": "On the beach at sunset, {MOM} stands alone seen from the side, holding an old camera up to her eye, smiling, gentle waves and a golden sky behind her."
+    },
+    {
+      "text": "Onun çektiği binlerce anın var;\nonunla çekilen ise çok az.",
+      "prompt": "At night by a rainy window, {WOMAN} sits on the floor under a warm lamp with a large open photo album on her lap, looking at it with a soft, thoughtful smile."
+    },
+    {
+      "text": "Bu hafta onun fotoğrafını sen çek.\nBunu kardeşine gönder.",
+      "prompt": "In an autumn garden at sunset, {OLDMOM} sits on a bench under a tree laughing shyly, while {WOMAN} stands a few steps away on the right smiling at her, an old camera hanging on a strap around her neck, golden leaves falling."
+    }
+  ],
+  "caption": "Annen nerede?\n\nO hep kareyi çeken taraftaydı. 🤍\n\nBunu kardeşine gönder.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#anne",
+    "#annem",
+    "#ailefotoğrafı",
+    "#anılar"
+  ]
+}

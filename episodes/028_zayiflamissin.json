@@ -1,0 +1,39 @@
+{
+  "id": "028",
+  "slug": "zayiflamissin",
+  "title": "Zayıflamışsın",
+  "characters": {
+    "GRANDMA": "a small round grandmother in her seventies with white hair in a bun, wearing a lavender cardigan and a flowery apron",
+    "GRANDSON": "a young man of about twenty-five with curly brown hair, wearing a teal jacket"
+  },
+  "scenes": [
+    {
+      "text": "Ninen seni neden her gördüğünde\n\"Zayıflamışsın\" der, hiç düşündün mü?",
+      "prompt": "At the wooden gate of a small village house in autumn, {GRANDMA} welcomes {GRANDSON} with open arms and a big smile, golden leaves falling from a big walnut tree."
+    },
+    {
+      "text": "Kapıdan girer girmez sofraya oturtur,\ntabağını iki kez doldurur.",
+      "prompt": "In a cozy village kitchen, {GRANDSON} sits at a table full of dishes with a full plate in front of him, while {GRANDMA} stands beside the table smiling proudly, warm window light."
+    },
+    {
+      "text": "Sen \"Kilo aldım nine\" desen de\nikna olmaz, başını sallar.",
+      "prompt": "In the cozy kitchen, {GRANDSON} on the left laughs and shakes his head, while {GRANDMA} on the right looks at him doubtfully with her arms crossed, a smile hiding on her face."
+    },
+    {
+      "text": "Onun gözünde azalan kilon değil,\nziyaretlerin.",
+      "prompt": "At sunset, {GRANDMA} stands alone at the window of the village house, looking out at the empty road, autumn leaves drifting past, a warm lamp glowing behind her."
+    },
+    {
+      "text": "Bu hafta git, bırak seni doyursun.\nBunu ninesini özleyen birine gönder.",
+      "prompt": "At sunset, {GRANDSON} arrives at the wooden garden gate with a travel bag on his shoulder, and {GRANDMA} hurries out of the house toward him smiling, golden autumn leaves falling."
+    }
+  ],
+  "caption": "Nineni özledin mi?\n\nOnun \"Zayıflamışsın\"ı aslında \"Geç kaldın\" demek. 🤍\n\nBunu ninesini özleyen birine gönder.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#nine",
+    "#anneanne",
+    "#babaanne",
+    "#özlem"
+  ]
+}
