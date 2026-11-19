@@ -1,0 +1,40 @@
+{
+  "id": "038",
+  "slug": "ev_arkadasi",
+  "title": "Ev arkadaşı",
+  "characters": {
+    "GUY1": "a young man of about twenty with short brown hair, wearing a mustard yellow hoodie",
+    "GUY2": "a young man of about twenty with curly red hair and freckles, wearing a green flannel shirt",
+    "MAN": "a man of about thirty-five with short brown hair, wearing a grey shirt"
+  },
+  "scenes": [
+    {
+      "text": "Son ekmeği paylaştığın biriyle\nşimdi sadece beğeni mi paylaşıyorsun?",
+      "prompt": "At night in a tiny student kitchen lit by a single lamp, {GUY1} on the left and {GUY2} on the right sit at a small table laughing, one loaf of bread on the table between them, rain on the window."
+    },
+    {
+      "text": "Bir zamanlar aynı mutfakta\nay sonunu birlikte getirdiniz.",
+      "prompt": "On a winter night in a small student apartment, {GUY1} and {GUY2} sit wrapped in blankets on the floor next to a small heater, laughing, snow falling outside the window."
+    },
+    {
+      "text": "Kötü günlerde\nsabaha kadar balkonda konuştunuz.",
+      "prompt": "At dawn, {GUY1} and {GUY2} sit side by side on a small balcony seen from behind, looking at the sunrise over city rooftops, soft pink sky."
+    },
+    {
+      "text": "Şimdi aranızda bir kalp işareti\nve koca bir sessizlik var.",
+      "prompt": "In the evening, {MAN} sits alone on a sofa in a tidy apartment, a phone lying on the coffee table in front of him, looking at it thoughtfully, rain on the window."
+    },
+    {
+      "text": "Bir beğeni değil, bir ses yolla.\nBunu ev arkadaşına gönder.",
+      "prompt": "At sunset, {MAN} sits on a park bench laughing warmly, a phone on speaker lying on the bench beside him, golden autumn leaves falling."
+    }
+  ],
+  "caption": "Ev arkadaşın nerede?\n\nAynı mutfaktan çıkan dostluklar kolay bitmez. 🤍\n\nBunu ev arkadaşına gönder.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#evarkadaşı",
+    "#dostluk",
+    "#üniversite",
+    "#anılar"
+  ]
+}

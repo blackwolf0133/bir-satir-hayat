@@ -1,0 +1,39 @@
+{
+  "id": "044",
+  "slug": "ninenin_cekmecesi",
+  "title": "Ninenin çekmecesi",
+  "characters": {
+    "GRANNY": "a small old grandmother with white hair in a bun, wearing a floral headscarf and a plum colored cardigan",
+    "WOMAN": "a woman of about thirty with curly brown hair, wearing a mustard yellow coat"
+  },
+  "scenes": [
+    {
+      "text": "Ninen neden poşetleri, kavanozları,\nkurdeleleri bile atmadan saklar?",
+      "prompt": "An old cozy kitchen with wooden shelves full of glass jars, folded cloths and ribbons, afternoon sun through lace curtains, an autumn tree outside. No people."
+    },
+    {
+      "text": "\"Bir gün lazım olur\" der,\nsen de gülersin.",
+      "prompt": "{GRANNY} stands at an open kitchen cupboard arranging glass jars on a shelf, smiling to herself, warm afternoon light."
+    },
+    {
+      "text": "Bir gün eski bir çekmecesini açarsın.",
+      "prompt": "In a sunlit old bedroom, {WOMAN} kneels in front of a wooden dresser and pulls open a drawer, curious expression, autumn leaves outside the window."
+    },
+    {
+      "text": "İçinde, çocukken çizdiğin\nburuşuk bir resim.",
+      "prompt": "Inside an open wooden drawer, a wrinkled child's crayon drawing of a little house and a smiling sun lies among folded ribbons, warm golden light."
+    },
+    {
+      "text": "Ninen her şeyi değil, seni saklıyormuş.\nBunu ninesini seven birine gönder.",
+      "prompt": "At sunset in an autumn garden, {GRANNY} sits on a bench under a tree, and {WOMAN} sits beside her on the right, both smiling, golden leaves falling."
+    }
+  ],
+  "caption": "Ninen neler saklıyor?\n\nO çekmecede bir çocukluk duruyor. 🤍\n\nBunu ninesini seven birine gönder.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#nine",
+    "#ninem",
+    "#babaanne",
+    "#anneanne"
+  ]
+}

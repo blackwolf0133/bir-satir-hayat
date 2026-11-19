@@ -1,0 +1,41 @@
+{
+  "id": "035",
+  "slug": "cam_kenari",
+  "title": "Cam kenarı",
+  "characters": {
+    "BRO": "a boy of about ten with messy brown hair, wearing a green raincoat",
+    "SIS": "a girl of about eight with a short black bob, wearing a red raincoat",
+    "MAN": "a man of about thirty-two with messy brown hair, wearing a green parka",
+    "WOMAN": "a woman of about thirty with a short black bob, wearing a red wool coat"
+  },
+  "scenes": [
+    {
+      "text": "Kardeşinle en büyük kavganız\nneden hep cam kenarı içindi?",
+      "prompt": "In the back seat of an old family car on a rainy day, {BRO} on the left and {SIS} on the right sit side by side, both leaning toward the same window and pouting at each other, raindrops on the glass."
+    },
+    {
+      "text": "Yol uzundu, cam tekti;\ndünya oradan görünüyordu.",
+      "prompt": "A winding country road through golden autumn hills seen from a car window, light rain, a faint rainbow over the trees. No people."
+    },
+    {
+      "text": "Sonunda biri uyuyakalır,\nöbür sessizce cama geçerdi.",
+      "prompt": "At dusk in the back seat of the car, {SIS} is asleep with her head resting on the shoulder of {BRO}, who looks out the window with a quiet smile, soft orange light."
+    },
+    {
+      "text": "Şimdi ayrı şehirlerde,\nkendi arabanızda tek başınasınız.",
+      "prompt": "On a rainy night, {MAN} sits alone in the driver's seat of a car parked by the roadside, looking out the wet window, blurred city lights."
+    },
+    {
+      "text": "Bir yolculuk planla, cam kenarı ona kalsın.\nBunu kardeşine gönder.",
+      "prompt": "On an autumn road at sunset, {MAN} drives on the left laughing, while {WOMAN} sits in the passenger seat on the right leaning toward the open window with a big smile, golden leaves blowing."
+    }
+  ],
+  "caption": "Cam kenarı kimindi?\n\nKavga ettiğiniz o koltuk şimdi çok boş. 🤍\n\nBunu kardeşine gönder.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#kardeş",
+    "#kardeşler",
+    "#çocukluk",
+    "#anılar"
+  ]
+}

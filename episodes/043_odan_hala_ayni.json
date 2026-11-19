@@ -1,0 +1,39 @@
+{
+  "id": "043",
+  "slug": "odan_hala_ayni",
+  "title": "Odan hâlâ aynı",
+  "characters": {
+    "MOM": "a mother in her late fifties with short silver hair, wearing a terracotta cardigan",
+    "MAN": "a young man of about twenty-six with short black hair, wearing a navy blue jacket"
+  },
+  "scenes": [
+    {
+      "text": "Evden gittiğin gün,\nannen odanı neden hiç toplamadı?",
+      "prompt": "An empty teenager's bedroom in afternoon light: an unmade bed, a guitar leaning against the wall, a desk by the window, autumn trees outside. No people."
+    },
+    {
+      "text": "Yatağın aynı, perden aynı,\nmasan hâlâ cam kenarında.",
+      "prompt": "{MOM} stands in the doorway of the empty bedroom with one hand on the door frame, looking inside with a soft smile, warm sunset light."
+    },
+    {
+      "text": "Herkes \"Misafir odası yap\" dedi;\no hep \"Sonra\" dedi.",
+      "prompt": "In the evening, {MOM} sits on the edge of the bed in the empty room, smoothing the quilt with her hand, warm lamp light, rain on the window."
+    },
+    {
+      "text": "Çünkü o bir oda değil,\nsenin dönme ihtimalin.",
+      "prompt": "At night, a small house seen from outside with one warm lamp glowing in an upstairs window, light rain falling, autumn leaves on the ground."
+    },
+    {
+      "text": "Bu hafta sonu git, o odada uyu.\nBunu annene gönder.",
+      "prompt": "On a sunny morning, {MAN} sleeps peacefully in the old bed under a quilt, while {MOM} stands in the doorway on the right smiling, golden light through the window."
+    }
+  ],
+  "caption": "Odan hâlâ duruyor mu?\n\nO oda seni bekliyor. 🤍\n\nBunu annene gönder.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#anne",
+    "#evlat",
+    "#özlem",
+    "#yuva"
+  ]
+}

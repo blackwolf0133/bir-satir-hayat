@@ -1,0 +1,41 @@
+{
+  "id": "034",
+  "slug": "ezberdeki_tarih",
+  "title": "Ezberdeki tarih",
+  "characters": {
+    "MAN": "a young man of about thirty with short brown hair and a short beard, wearing a mustard yellow sweater",
+    "FRIEND": "a young man of about thirty with curly black hair and round glasses, wearing a navy blue coat",
+    "KID1": "a boy of about twelve with short brown hair, wearing a mustard yellow sweater",
+    "KID2": "a boy of about twelve with curly black hair and round glasses, wearing a navy blue jacket"
+  },
+  "scenes": [
+    {
+      "text": "Konuşmayı bıraktığın birinin doğum gününü\nneden hâlâ ezbere biliyorsun?",
+      "prompt": "On an autumn evening, {MAN} sits alone by a rainy window in a cozy room, looking outside thoughtfully, warm lamp light, golden leaves blowing past the glass."
+    },
+    {
+      "text": "Çünkü yıllarca o gün\nyan yana mum üflediniz.",
+      "prompt": "At a birthday party in a warm living room, {KID1} on the left and {KID2} on the right lean over a cake with glowing candles on the table, both laughing, soft candle light."
+    },
+    {
+      "text": "Sonra şehirler değişti, telefonlar sustu;\nkimse kızmadı bile.",
+      "prompt": "At an old train station in autumn, {MAN} stands alone on the platform seen from behind, watching a train leave into the distance, golden leaves falling."
+    },
+    {
+      "text": "Ama her yıl o sabah\naklına ilk o geliyor, değil mi?",
+      "prompt": "At sunrise, {MAN} sits on the edge of his bed next to a window, a soft smile on his face as if remembering something, golden morning light, autumn tree outside."
+    },
+    {
+      "text": "Belki o da seninkini hatırlıyor.\nBunu ona gönder.",
+      "prompt": "At sunset, {FRIEND} sits alone on a wooden bench in an autumn park, smiling softly as if remembering an old friend, golden leaves falling around him."
+    }
+  ],
+  "caption": "Onu hatırlıyorsun, değil mi?\n\nBazı tarihler takvimden silinir, kalpten silinmez. 🤍\n\nBunu doğum gününü unutmadığın o dosta gönder.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#eskidost",
+    "#dostluk",
+    "#arkadaşlık",
+    "#özlem"
+  ]
+}

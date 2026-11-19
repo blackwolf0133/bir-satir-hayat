@@ -1,0 +1,39 @@
+{
+  "id": "036",
+  "slug": "mesgul_muydun",
+  "title": "Meşgul müydün?",
+  "characters": {
+    "MOM": "a mother in her sixties with short grey hair and glasses, wearing a lavender cardigan",
+    "WOMAN": "a young woman of about twenty-eight with long dark hair, wearing a beige trench coat"
+  },
+  "scenes": [
+    {
+      "text": "Annen seni aradığında neden hep\n\"Meşgul müydün?\" diye başlıyor?",
+      "prompt": "At dusk in a quiet living room, {MOM} sits alone in an armchair by a rainy window, a phone resting on the small table beside her, she glances at it."
+    },
+    {
+      "text": "Çünkü bütün gün,\nseni rahatsız etmeyeceği saati kolladı.",
+      "prompt": "In the afternoon, {MOM} stands by the kitchen window looking out at autumn trees, a cup of tea on the counter beside her, soft light."
+    },
+    {
+      "text": "Sen işten çıkarken,\no telefona bakıp bekliyordu.",
+      "prompt": "On a rainy city street in the evening, {WOMAN} walks quickly out of an office building under an open umbrella, glowing street lamps, people in the background."
+    },
+    {
+      "text": "O soru aslında\n\"Beni biraz dinler misin?\" demek.",
+      "prompt": "At night, {MOM} sits in her armchair under a warm lamp, looking at the silent phone on the side table with a soft, hopeful expression, rain on the window."
+    },
+    {
+      "text": "Bugün o sormadan sen ara.\nBunu annene gönder.",
+      "prompt": "At sunset, {MOM} sits by the window laughing with joy, a phone on speaker resting on the table in front of her, warm golden light, autumn leaves outside."
+    }
+  ],
+  "caption": "Annen aradı mı?\n\nO soru aslında bir özlem. 🤍\n\nBunu annene gönder.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#anne",
+    "#annem",
+    "#annemiara",
+    "#özlem"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "040",
+  "slug": "kapidaki_dede",
+  "title": "Kapıdaki dede",
+  "characters": {
+    "GRANDPA": "an old grandfather with white hair and a white mustache, wearing a dark green knitted vest and a grey flat cap",
+    "BOY": "a boy of about eight with short brown hair, wearing an orange jacket",
+    "MAN": "a young man of about twenty-five with short brown hair, wearing an orange jacket"
+  },
+  "scenes": [
+    {
+      "text": "Deden seni yolcu ederken neden\nköşeyi dönene kadar kapıda beklerdi?",
+      "prompt": "On an autumn afternoon, {GRANDPA} stands at the wooden garden gate of a small old house, looking down the street, golden leaves falling around him."
+    },
+    {
+      "text": "Sen arabaya biner,\nhemen önüne dönerdin.",
+      "prompt": "Seen through a car window on an autumn street, {BOY} sits in the back seat looking straight ahead, golden trees outside."
+    },
+    {
+      "text": "O ise el sallamaya devam ederdi,\nsen görmesen bile.",
+      "prompt": "At sunset, {GRANDPA} stands at the garden gate waving one hand, while a small car drives away down a leafy street in the distance."
+    },
+    {
+      "text": "Çünkü belki dönüp bakarsın diye,\nher seferinde biraz daha beklerdi.",
+      "prompt": "At dusk, {GRANDPA} still stands alone at the garden gate, the street empty, a warm lamp glowing in the window of the house behind him, leaves drifting."
+    },
+    {
+      "text": "Bu sefer köşeden önce dönüp el salla.\nBunu dedene gönder.",
+      "prompt": "At sunset on a leafy street, {MAN} on the left turns around at the corner and waves, while far away on the right {GRANDPA} at the garden gate waves back, smiling, golden leaves falling."
+    }
+  ],
+  "caption": "Dönüp baktın mı?\n\nO kapıda senin el sallamanı bekledi. 🤍\n\nBunu dedene gönder.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#dede",
+    "#dedem",
+    "#özlem",
+    "#aile"
+  ]
+}

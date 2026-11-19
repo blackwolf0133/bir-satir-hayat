@@ -1,0 +1,41 @@
+{
+  "id": "042",
+  "slug": "ilk_aranan",
+  "title": "İlk aranan",
+  "characters": {
+    "WOMAN": "a woman of about thirty-two with a long dark braid, wearing a mustard yellow sweater",
+    "YOUNG": "a young man of about twenty-two with messy light brown hair, wearing a red hoodie",
+    "GIRL": "a girl of about ten with a long dark braid, wearing a mustard yellow nightdress",
+    "LITTLE": "a little boy of about four with messy light brown hair, wearing red pajamas"
+  },
+  "scenes": [
+    {
+      "text": "Küçük kardeşin başı sıkışınca\nhâlâ neden ilk seni arıyor?",
+      "prompt": "At night, {WOMAN} sits on a sofa under a warm lamp, a phone lighting up on the coffee table in front of her, she looks at it with a tired sigh, rain on the window."
+    },
+    {
+      "text": "Sınavı kötü geçer, kalbi kırılır,\narabası yolda kalır.",
+      "prompt": "On a rainy roadside at dusk, {YOUNG} stands next to a small broken-down car with its hood open, looking helpless, autumn leaves on the wet road."
+    },
+    {
+      "text": "Sen söylenirsin\nama yine de ceketini alıp çıkarsın.",
+      "prompt": "On a rainy evening, {WOMAN} hurries down the front steps of an apartment building under an open umbrella, glowing street lamps."
+    },
+    {
+      "text": "Çünkü çocukken karanlıktan korkunca\nhep senin yatağına gelirdi.",
+      "prompt": "At night in a child's room lit by a small star-shaped lamp, {LITTLE} stands beside the bed while {GIRL} lifts the edge of her quilt to let him in, both smiling."
+    },
+    {
+      "text": "Sen onun hâlâ en güvenli yerisin.\nBunu kardeşine gönder.",
+      "prompt": "On a rainy evening, {WOMAN} on the left and {YOUNG} on the right sit side by side on the curb under one umbrella next to the broken car, his head on her shoulder, both smiling."
+    }
+  ],
+  "caption": "İlk kimi arıyor?\n\nSöylenmen geçer, onun sana güveni geçmez. 🤍\n\nBunu kardeşine gönder.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#kardeş",
+    "#kardeşlik",
+    "#ablalık",
+    "#abilik"
+  ]
+}

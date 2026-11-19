@@ -1,0 +1,39 @@
+{
+  "id": "041",
+  "slug": "corba",
+  "title": "Çorba",
+  "characters": {
+    "HUSBAND": "a man of about thirty-five with short dark hair and stubble, wearing a grey knitted sweater",
+    "WIFE": "a woman of about thirty-three with wavy auburn hair, wearing a mint green cardigan"
+  },
+  "scenes": [
+    {
+      "text": "Eşinin seni en çok sevdiği an,\nsandığın gibi yıldönümü değil.",
+      "prompt": "A table set for a fancy dinner with candles and a vase of red roses in an empty room at night, rain on the window behind it. No people."
+    },
+    {
+      "text": "Sen ateşler içinde yatarken\ngece yarısı mutfakta yanan ışık.",
+      "prompt": "At midnight in a small kitchen with one warm light on, {HUSBAND} stands at the stove stirring a pot, steam rising, rain on the dark window."
+    },
+    {
+      "text": "Uykusuzdu, yorgundu;\ntarif bilmeden çorba yaptı.",
+      "prompt": "In the same kitchen at night, {HUSBAND} looks at the steaming pot on the stove with a tired, unsure expression, messy counter, warm lamp light."
+    },
+    {
+      "text": "Tuzu fazlaydı.\nYine de hayatının en güzel çorbasıydı.",
+      "prompt": "In a bedroom lit by a bedside lamp, {WIFE} sits up in bed under a thick quilt smiling weakly, a bowl of soup on the bedside table, {HUSBAND} sits on the edge of the bed on the right smiling at her."
+    },
+    {
+      "text": "Aşk çiçekte değil, o tencerede saklı.\nBunu eşine gönder.",
+      "prompt": "On an autumn evening in the warm kitchen, {WIFE} stands at the stove smiling, while {HUSBAND} sits at the kitchen table on the left wrapped in a blanket, rain on the window."
+    }
+  ],
+  "caption": "Çorbayı kim yaptı?\n\nAşk bazen tuzu fazla bir çorbadır. 🤍\n\nBunu eşine gönder.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#eş",
+    "#evlilik",
+    "#aşk",
+    "#sevgi"
+  ]
+}

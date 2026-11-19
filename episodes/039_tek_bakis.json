@@ -1,0 +1,41 @@
+{
+  "id": "039",
+  "slug": "tek_bakis",
+  "title": "Tek bakış",
+  "characters": {
+    "BRO": "a boy of about eleven with short black hair, wearing a blue striped sweater",
+    "SIS": "a girl of about nine with curly brown hair, wearing a pink sweater",
+    "MAN": "a man of about thirty with short black hair, wearing a navy blue sweater",
+    "WOMAN": "a woman of about twenty-eight with curly brown hair, wearing a rose pink blouse"
+  },
+  "scenes": [
+    {
+      "text": "Annen sofrada kızarken kardeşinle göz göze geldiğin\no anı hatırlıyor musun?",
+      "prompt": "At a family dinner table in the evening under a warm hanging lamp, {BRO} on the left and {SIS} on the right sit side by side, pressing their lips together and glancing at each other, trying not to laugh."
+    },
+    {
+      "text": "Gülmemek için dudağını ısırırdın,\no da tabağına bakardı.",
+      "prompt": "At the dinner table under the warm lamp, {SIS} looks down at her plate with puffed cheeks, holding back laughter, rain on the window behind her."
+    },
+    {
+      "text": "Sonra ikiniz birden\nkahkahayı patlatırdınız.",
+      "prompt": "At the dinner table, {BRO} on the left and {SIS} on the right laugh out loud together, heads tilted back, warm lamp light."
+    },
+    {
+      "text": "Yıllar geçti ama o bakış\nhâlâ kalabalık sofralarda işe yarıyor.",
+      "prompt": "At an evening family dinner in a garden under strings of warm lights, {MAN} on the left and {WOMAN} on the right sit across a long table and exchange a knowing glance, holding back smiles, autumn leaves falling."
+    },
+    {
+      "text": "Kardeş, tek bakışla anlaştığın tek insandır.\nBunu kardeşine gönder.",
+      "prompt": "At sunset, {MAN} and {WOMAN} walk side by side down a garden path under falling golden leaves, laughing hard, seen from the front."
+    }
+  ],
+  "caption": "Kardeşinle bakıştın mı?\n\nBazı dilleri sadece kardeşler konuşur. 🤍\n\nBunu kardeşine gönder.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#kardeş",
+    "#kardeşlik",
+    "#çocukluk",
+    "#aile"
+  ]
+}

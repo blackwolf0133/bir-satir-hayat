@@ -1,0 +1,39 @@
+{
+  "id": "045",
+  "slug": "koltukta_uyuyan",
+  "title": "Koltukta uyuyan",
+  "characters": {
+    "DAD": "a father in his fifties with short greying hair and glasses, wearing a navy blue work jacket",
+    "SON": "a young man of about twenty-five with short brown hair, wearing a grey hoodie"
+  },
+  "scenes": [
+    {
+      "text": "Babanın \"Yoruldum\" dediğini\nhiç duydun mu?",
+      "prompt": "In the evening, {DAD} carries two heavy grocery bags up an apartment staircase lit by a warm lamp, autumn leaves visible through the stairwell window."
+    },
+    {
+      "text": "Musluğu o tamir etti,\nfaturayı o ödedi, seni o taşıdı.",
+      "prompt": "In a kitchen in warm evening light, {DAD} kneels in front of the open cabinet under the sink, fixing the pipe with a focused face."
+    },
+    {
+      "text": "Ama her akşam haberlerin ortasında\nkoltukta uyuyakaldı.",
+      "prompt": "In a living room lit by a floor lamp, {DAD} is asleep in an armchair with his glasses slipping down his nose, rain on the window behind him."
+    },
+    {
+      "text": "Sen \"Yine uyudu\" diye güldün;\no aslında yorgunluğunu söylüyordu.",
+      "prompt": "{SON} stands in the living room doorway on the left smiling, looking at {DAD} asleep in the armchair on the right, warm lamp light."
+    },
+    {
+      "text": "Bu akşam üstünü sen ört.\nBunu babana gönder.",
+      "prompt": "In the lamp-lit living room, {SON} gently lays a soft blanket over {DAD}, who sleeps peacefully in the armchair, rain falling outside the window."
+    }
+  ],
+  "caption": "Baban yorgun mu?\n\nBabalar yorgunluğu söylemez, koltukta uyuyakalır. 🤍\n\nBunu babana gönder.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#baba",
+    "#babam",
+    "#babalar",
+    "#aile"
+  ]
+}

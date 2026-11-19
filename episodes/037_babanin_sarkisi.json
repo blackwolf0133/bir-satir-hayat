@@ -1,0 +1,41 @@
+{
+  "id": "037",
+  "slug": "babanin_sarkisi",
+  "title": "Babanın şarkısı",
+  "characters": {
+    "DAD": "a father in his forties with short black hair and a thick black mustache, wearing a brown corduroy jacket",
+    "KID": "a girl of about ten with a dark ponytail, wearing a blue hoodie",
+    "WOMAN": "a woman of about thirty with a dark ponytail, wearing a blue wool coat",
+    "OLDDAD": "the same father, now in his seventies with white hair and a white mustache, wearing a brown corduroy jacket"
+  },
+  "scenes": [
+    {
+      "text": "Babanın arabada açtığı eski şarkılardan\nneden o kadar sıkılırdın?",
+      "prompt": "Inside an old car on a country road at sunset, {DAD} drives on the left humming happily, while {KID} sits in the passenger seat on the right with her arms crossed, rolling her eyes."
+    },
+    {
+      "text": "Hep aynı kaset,\nher yolculukta aynı nakarat.",
+      "prompt": "An old red car drives along a winding road through autumn hills at sunset, golden leaves blowing across the road. No people visible."
+    },
+    {
+      "text": "Yıllar sonra bir gece,\no şarkı radyoda çaldı.",
+      "prompt": "On a rainy night, {WOMAN} sits alone in the driver's seat of a parked car, rain streaming down the windshield, city lights glowing, she looks surprised and moved."
+    },
+    {
+      "text": "Kapatmadın.\nÜstelik bütün sözleri ezberindeymiş.",
+      "prompt": "In the same parked car on the rainy night, {WOMAN} smiles with teary eyes, singing softly to herself, warm light from the street lamps on her face."
+    },
+    {
+      "text": "O şarkıyı bir de onunla dinle.\nBunu babana gönder.",
+      "prompt": "On an autumn road at sunset, {OLDDAD} drives on the left smiling proudly, while {WOMAN} sits in the passenger seat on the right laughing, golden leaves falling."
+    }
+  ],
+  "caption": "Babanın şarkısı neydi?\n\nSıkıldığın o şarkı şimdi seni ona götürüyor. 🤍\n\nBunu babana gönder.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#baba",
+    "#babam",
+    "#anılar",
+    "#yolculuk"
+  ]
+}
