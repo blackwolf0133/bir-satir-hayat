@@ -71,3 +71,19 @@ Veri: 8 kanalda izleyici ortalama 5-13 sn'de kaydırıyor. Instagram videoyu ön
 En yüksek puan 4'ün altındaysa ilk cümleyi yeniden yaz. Selamlama, giriş, "bugün size … anlatacağım", tarih/yer ile başlamak YASAK; en çarpıcı an ilk cümlede. Doğruluk kuralları aynen geçerli (abartı/uydurma yok).
 
 **Gönderilme (DM) sebebi:** Instagram'da yeni kişilere ulaştıran en güçlü sinyal videonun DM ile birine gönderilmesi. Her bölümün SON seslendirilen cümlesi (ya da kapanış kartı alt yazısı), izleyicinin videoyu belirli birine göndermesi için doğal bir sebep versin; TEK cümle, dilenmeden: "Bunu her ay sonu batan arkadaşına gönder.", "Bunu gece yolculuğu seven birine gönder." Açıklamadaki tek çağrı kuralı aynen kalır (bu cümle videonun içinde).
+
+## 21 Kasım: KULLANICI KARARI — ANNE bölümlerine ağırlık (ZORUNLU)
+Veri: 20 Kasım'daki "Annen uyudu mu?" (024) 19.377 izlenme, 272 beğeni, 218 paylaşım aldı; diğer bölümler
+1.300-2.300 izlenmede. Bu yüzden:
+- Sıradaki bölümlerin EN AZ YARISI anne üzerine olsun (günde 2 paylaşımdan en az biri). Kalanlar baba, nine/dede,
+  kardeş gibi aile büyükleri; aynı gün iki anne bölümü arka arkaya gelmesin.
+- Ton HÜZÜNLÜ ve sıcak: annenin fark edilmeyen fedakârlıkları, yaşlanması, yorgunluğu, beklemesi, aramayı
+  bekleyen telefon, sofrada son lokmayı sana bırakması, uyumadan beklemesi, ellerindeki çizgiler, uzakta olmak,
+  "keşke daha çok sarılsaydım"… Abartısız, gerçek, herkesin kendi annesini göreceği küçük anlar. Ölüm/hastalık
+  ağır ayrıntıyla değil; hasret ve zamanın geçişi üzerinden.
+- SON cümle ve açıklamadaki TEK çağrı paylaşmaya yönelik, anneye ya da anne sevenlere:
+  "Bunu annenle paylaş, onu hatırladığını bilsin.", "Annesini çok seven birine gönder.",
+  "Annene gönder; bunu hak ediyor.", "Bugün annene bunu gönder, sadece 'aklıma geldin' yaz." — her bölümde farklı,
+  özgün bir cümle kur (aynısını tekrar etme).
+- Açıklamanın ilk satırı yine 2-4 kelimelik "sen"e dönük soru/yargı ("Annen bekliyor mu?", "Ona son ne zaman
+  sarıldın?").
