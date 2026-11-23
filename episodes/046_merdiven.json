@@ -1,0 +1,39 @@
+{
+  "id": "046",
+  "slug": "merdiven",
+  "title": "Merdiven",
+  "characters": {
+    "MOM": "a mother in her mid sixties with dyed auburn hair showing grey roots, wearing a mint green cardigan",
+    "SON": "a man of about thirty-two with short black hair and glasses, wearing a brown corduroy jacket"
+  },
+  "scenes": [
+    {
+      "text": "Annenin yaşlandığını\nen son fark eden sen olacaksın.",
+      "prompt": "On an autumn afternoon, {MOM} stands smiling at the open door of an old apartment building, waving to someone off screen, golden leaves blowing on the steps."
+    },
+    {
+      "text": "Çünkü her gelişinde onu\nkapıda, hep aynı gülüşle bulursun.",
+      "prompt": "At the door of a warm apartment, {MOM} on the right welcomes {SON} on the left with open arms and a big smile, warm light from inside, autumn evening."
+    },
+    {
+      "text": "Bir gün merdiveni\nyavaş çıktığını görürsün.",
+      "prompt": "In the stairwell of an old apartment building, {MOM} climbs the stairs slowly, one hand on the railing, pausing to rest, soft light through a window with autumn trees."
+    },
+    {
+      "text": "Saçının beyazı da\nboyanın altından çoktan çıkmıştır.",
+      "prompt": "In the afternoon by a window, {MOM} sits in an armchair looking calmly at the garden, sunlight on her hair, autumn leaves falling outside."
+    },
+    {
+      "text": "Bu hafta onunla yavaş yürü.\nBunu annene gönder; yürüyüşe sen çağır.",
+      "prompt": "At sunset on a park path covered with autumn leaves, {SON} walks slowly beside {MOM}, matching her small steps, seen from behind, warm golden light."
+    }
+  ],
+  "caption": "Annen yaşlanıyor.\n\nHer gelişinde aynı gülüşü görünce fark etmiyorsun. 🤍\n\nBunu annene gönder; yürüyüşe sen çağır.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#anne",
+    "#annem",
+    "#zaman",
+    "#evlat"
+  ]
+}

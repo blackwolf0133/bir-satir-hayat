@@ -1,0 +1,39 @@
+{
+  "id": "038",
+  "slug": "kavanozlar",
+  "title": "Kavanozlar",
+  "characters": {
+    "MOM": "a mother in her sixties with grey hair in a low bun, wearing a dusty rose cardigan",
+    "SON": "a young man of about thirty with short brown hair and a short beard, wearing a navy blue coat"
+  },
+  "scenes": [
+    {
+      "text": "Annenin evinden neden\nhiçbir zaman eli boş dönemiyorsun?",
+      "prompt": "In a warm kitchen on an autumn morning, {MOM} lines up glass jars of jam, pickles and a wrapped pastry on the wooden table next to an open travel bag, soft window light."
+    },
+    {
+      "text": "Sen \"Gerek yok anne\" dersin,\no duymamış gibi yapar.",
+      "prompt": "In the hallway of a small house, {SON} stands by the door in his coat shaking his head with a smile, while {MOM} on the right walks toward him holding a cloth bundle."
+    },
+    {
+      "text": "Kavanozun biri hep\nbir kazağın arasına saklanmış çıkar.",
+      "prompt": "In a small city apartment at night, an open travel bag on a bed with a folded wool sweater and a glass jar of jam peeking out between the clothes, warm lamp light, rain on the window. No people."
+    },
+    {
+      "text": "Çünkü o seninle gelemiyor;\nkendini kavanoza koyuyor.",
+      "prompt": "At night in a small city apartment, {SON} sits alone at a kitchen table with the jar of jam and a slice of bread in front of him, looking at the jar with a soft smile, rain on the window."
+    },
+    {
+      "text": "Bir dahaki sefere hepsini al.\nBunu kavanozlarla dönen birine gönder.",
+      "prompt": "On an autumn evening at the garden gate of a small house, {MOM} waves goodbye while {SON} walks away carrying a heavy bag, both smiling, golden leaves falling."
+    }
+  ],
+  "caption": "Kavanozlar geldi mi?\n\nAnnen o kavanozlara biraz da kendini koyar. 🤍\n\nBunu annesinin kavanozlarıyla dönen birine gönder.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#anne",
+    "#annemineli",
+    "#gurbet",
+    "#evlat"
+  ]
+}

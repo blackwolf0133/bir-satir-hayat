@@ -1,0 +1,41 @@
+{
+  "id": "040",
+  "slug": "annenin_paltosu",
+  "title": "Annenin paltosu",
+  "characters": {
+    "MOM": "a mother in her early forties with long dark hair in a braid, wearing an old faded brown wool coat",
+    "GIRL": "a little girl of about eight with short black hair, wearing a bright red puffer jacket",
+    "OLDMOM": "the same mother, now in her sixties with grey hair in a braid, wearing the same old faded brown wool coat",
+    "WOMAN": "a young woman of about twenty-eight with short black hair, wearing a red wool coat"
+  },
+  "scenes": [
+    {
+      "text": "Annenin paltosu kaç kışlık,\nhiç düşündün mü?",
+      "prompt": "On a snowy winter morning, {MOM} in her old faded coat walks {GIRL} to school, snow falling softly, warm street lamps still on."
+    },
+    {
+      "text": "Senin her kış\nyeni bir montun oldu.",
+      "prompt": "In a small living room in winter, {GIRL} spins happily in her new red jacket while {MOM} sits on the sofa watching her with a tired, warm smile, lamp light, snow outside."
+    },
+    {
+      "text": "Onunki hep aynı kaldı;\n\"Bu daha sıcak\" dedi.",
+      "prompt": "In the evening by a window, {MOM} sits in lamp light sewing a button back on her old faded brown coat laid across her lap, snow falling outside."
+    },
+    {
+      "text": "Annen eskittikçe,\nsen yeni kaldın.",
+      "prompt": "Years later, on a snowy street, {OLDMOM} in the same old faded brown coat walks slowly under falling snow, glowing street lamps, quiet and calm."
+    },
+    {
+      "text": "Bu kış paltoyu sen al.\nBunu annene gönder; bu kış onun olsun.",
+      "prompt": "On a snowy evening at the door of a small house, {WOMAN} wraps a new soft cream colored coat around the shoulders of {OLDMOM}, who smiles with tears of joy, warm light from inside."
+    }
+  ],
+  "caption": "Annen üşüyor mu?\n\nAnnen hep kendini en sona koydu. 🤍\n\nBunu annene gönder; bu kış onun olsun.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#anne",
+    "#annefedakarlığı",
+    "#kış",
+    "#evlat"
+  ]
+}

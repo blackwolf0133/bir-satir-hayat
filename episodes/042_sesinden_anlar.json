@@ -1,0 +1,39 @@
+{
+  "id": "042",
+  "slug": "sesinden_anlar",
+  "title": "Sesinden anlar",
+  "characters": {
+    "MOM": "a mother in her sixties with short white hair and round glasses, wearing a teal knitted cardigan",
+    "MAN": "a young man of about twenty-nine with wavy dark hair, wearing a grey hoodie and a mustard scarf"
+  },
+  "scenes": [
+    {
+      "text": "Annene \"İyiyim\" dediğinde,\nneden hiç inanmıyor?",
+      "prompt": "On a rainy autumn night in a small city apartment, {MAN} sits alone on the floor against the sofa, a phone on speaker on the low table in front of him, tired eyes, dim lamp light."
+    },
+    {
+      "text": "Çünkü yüzünü görmese de\nsesindeki yorgunluğu duyar.",
+      "prompt": "In a cozy living room far away, {MOM} sits in an armchair by a lamp, leaning toward a phone on the small table, listening carefully with a worried, tender face, rain on the window."
+    },
+    {
+      "text": "Çocukken ateşini alnından,\nşimdi sesinden anlıyor.",
+      "prompt": "In a child's bedroom long ago, lit by a small lamp, {MOM}, younger with dark hair, sits on the edge of the bed beside a sleeping little boy, watching over him, autumn rain outside."
+    },
+    {
+      "text": "Kilometreler aranıza girdi,\nama onun kulağı hep sende.",
+      "prompt": "A wide view at dusk of a long winding road through autumn hills, a small house with one warm window on one side and city lights far away on the other, soft rain."
+    },
+    {
+      "text": "Bu akşam sadece iyi olduğun için ara.\nBunu annene gönder, sonra sesini duyur.",
+      "prompt": "On a sunny autumn morning, {MAN} walks through a park full of golden leaves, smiling and talking on the phone, light and relaxed."
+    }
+  ],
+  "caption": "Gerçekten iyi misin?\n\nAnnen sesinden anlar, kandıramazsın. 🤍\n\nBunu annene gönder, sonra sesini duyur.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#anne",
+    "#annesevgisi",
+    "#uzaktakianne",
+    "#özlem"
+  ]
+}

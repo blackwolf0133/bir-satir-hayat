@@ -1,0 +1,39 @@
+{
+  "id": "036",
+  "slug": "sen_gelecek_diye",
+  "title": "Sen gelecek diye",
+  "characters": {
+    "MOM": "a mother in her late fifties with dark hair streaked with grey in a short bob, wearing a mustard yellow cardigan and a floral apron",
+    "DAUGHTER": "a young woman of about twenty-seven with long chestnut hair, wearing a forest green coat"
+  },
+  "scenes": [
+    {
+      "text": "Sen gelecek diye annen,\nbir gün önceden yorulur.",
+      "prompt": "In the early morning, {MOM} stands on a small stool hanging freshly washed white curtains at a living room window, autumn trees outside, soft light."
+    },
+    {
+      "text": "Perdeleri yıkar, yatağını serer,\nsevdiğin yemeği akşamdan hazırlar.",
+      "prompt": "In a cozy kitchen at evening, {MOM} stirs a big pot on the stove, several covered dishes waiting on the table beside her, warm lamp light, rain on the window."
+    },
+    {
+      "text": "Sen iki gün kalırsın,\nsonra o kocaman sofra tek kişilik olur.",
+      "prompt": "At a long wooden dining table in warm lamp light, {MOM} sits alone at one end with a single plate, the empty chairs around her, autumn rain on the window."
+    },
+    {
+      "text": "Senin için kısa bir ziyaret;\nonun için bir bayram.",
+      "prompt": "On a golden autumn afternoon, {MOM} waits at the open front door of a small house with a garden, smiling widely as {DAUGHTER} walks up the path with a small suitcase."
+    },
+    {
+      "text": "Bu sefer bir gün fazla kal.\nBunu annene gönder, geleceğini müjdele.",
+      "prompt": "At sunset in a garden full of autumn leaves, {DAUGHTER} on the left and {MOM} on the right sit side by side on a wooden bench, laughing together, golden light."
+    }
+  ],
+  "caption": "Annen yoruldu mu?\n\nSen gelecek diye bütün ev bayram olur. 🤍\n\nBunu annene gönder, geleceğini müjdele.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#anne",
+    "#annem",
+    "#memleket",
+    "#özlem"
+  ]
+}

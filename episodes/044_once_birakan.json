@@ -1,0 +1,39 @@
+{
+  "id": "044",
+  "slug": "once_birakan",
+  "title": "Önce bırakan",
+  "characters": {
+    "MOM": "a mother in her late fifties with curly greying hair, wearing a deep blue knitted shawl over a cream blouse",
+    "WOMAN": "a young woman of about twenty-six with a long dark ponytail, wearing a camel colored coat"
+  },
+  "scenes": [
+    {
+      "text": "Annenle sarılınca\nhep önce kim bırakıyor? Sen.",
+      "prompt": "At the front door of a small house on an autumn afternoon, {WOMAN} gently steps back from a hug while {MOM} still holds her arms open, smiling, golden leaves on the steps."
+    },
+    {
+      "text": "O kollarını biraz daha tutar,\nsen \"Tamam anne\" deyip çekilirsin.",
+      "prompt": "In the hallway by the door, {WOMAN} picks up her bag and looks at her watch, while {MOM} stands behind her watching her with a soft, longing smile, warm light."
+    },
+    {
+      "text": "Otobüse binerken o hâlâ\nkapıda, ellerini önlüğüne siliyor.",
+      "prompt": "On a rainy autumn evening, a bus pulls away from a small stop while {MOM} stands at a distant garden gate waving, glowing street lamp, wet leaves."
+    },
+    {
+      "text": "Bir gün o sarılmanın\nbir dakikasına her şeyini verirsin.",
+      "prompt": "At night by a rainy bus window, {WOMAN} sits alone looking out at passing city lights, a thoughtful, tender expression, warm reflections on the glass."
+    },
+    {
+      "text": "Bu sefer bırakma; o bıraksın.\nBunu annene gönder, sıkı sarılın.",
+      "prompt": "In a garden under a large tree with falling autumn leaves at sunset, {WOMAN} and {MOM} stand in a long, warm hug seen from a little distance, golden light."
+    }
+  ],
+  "caption": "Önce sen mi bırakıyorsun?\n\nAnnenin kolları hep biraz daha ister. 🤍\n\nBunu annene gönder, sıkı sarılın.",
+  "hashtags": [
+    "#birsatırhayat",
+    "#anne",
+    "#annemesarıl",
+    "#zaman",
+    "#özlem"
+  ]
+}
